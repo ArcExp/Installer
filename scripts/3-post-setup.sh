@@ -89,8 +89,8 @@ else
     		"/home/$USERNAME/.config" \
 
 		cp "$HOME/Installer/configs/wallpapers/streetview.png" "/home/$USERNAME/Pictures/"
-		cp "$HOME/Installer/configs/hyprland/.config/*" "/home/$USERNAME/.config/"
-		cp "$HOME/Installer/configs/.config/kitty/" "/home/$USERNAME/.config/"
+		cp -r "$HOME/Installer/configs/hyprland/.config/*" "/home/$USERNAME/.config/"
+		cp -r "$HOME/Installer/configs/.config/kitty/" "/home/$USERNAME/.config/"
 		
 		# Set ownership of the home directory
 		chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
