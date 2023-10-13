@@ -59,21 +59,44 @@ echo -ne "
                Enabling (and Theming) Login Display Manager
 -------------------------------------------------------------------------
 "
-if [[ ${DESKTOP_ENV} == "kde" ]]; then
+if [[ "${DESKTOP_ENV}" == "kde" ]]; then
   systemctl enable sddm.service
-  if [[ ${INSTALL_TYPE} == "FULL" ]]; then
-    echo [Theme] >>  /etc/sddm.conf
-    echo Current=Nordic >> /etc/sddm.conf
+  if [[ "${INSTALL_TYPE}" == "FULL" ]]; then
+    echo "[Theme]" >> /etc/sddm.conf
+    echo "Current=Nordic" >> /etc/sddm.conf
   fi
 
 elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
 
 else
-  if [[ ! "${DESKTOP_ENV}" == "server"  ]]; then
-  sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter
-  systemctl enable lightdm.service
-  sed -i 's/#greeter-session=example.*/greeter-session=lightdm-gtk-greeter/g' /etc/lightdm/lightdm.conf
+  if [[ "${DESKTOP_ENV}" != "server" ]]; then
+    sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter
+    systemctl enable lightdm.service
+    sed -i 's/#greeter-session=example.*/greeter-session=lightdm-gtk-greeter/g' /etc/lightdm/lightdm.conf
+  fi
+
+  if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
+  
+  	mkdir -p "/home/$USERNAME/Desktop" \
+    		"/home/$USERNAME/Documents" \
+    		"/home/$USERNAME/Downloads" \
+    		"/home/$USERNAME/Music" \
+    		"/home/$USERNAME/Pictures" \
+    		"/home/$USERNAME/Public" \
+    		"/home/$USERNAME/Templates" \
+    		"/home/$USERNAME/Videos" \
+    		"/home/$USERNAME/.config" \
+    		"/home/$USERNAME/.config/hypr" \
+    		"/home/$USERNAME/.local" \
+    		"/home/$USERNAME/.local/bin" 
+
+		cp "$HOME/Installer/configs/wallpapers/streetview.png" "/home/$USERNAME/Pictures/"
+		cp "$HOME/Installer/configs/hyprpaper.conf" "/home/$USERNAME/.config/hypr/"
+		cp "$HOME/Installer/configs/.config/kitty/*" "/home/$USERNAME/.config/"
+		
+		# Set ownership of the home directory
+		chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
   fi
 fi
 
