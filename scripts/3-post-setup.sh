@@ -87,14 +87,12 @@ else
     		"/home/$USERNAME/Templates" \
     		"/home/$USERNAME/Videos" \
     		"/home/$USERNAME/.config" \
-      		"/home/$USERNAME/.config/kitty" \
-    		"/home/$USERNAME/.config/hypr" \
     		"/home/$USERNAME/.local" \
     		"/home/$USERNAME/.local/bin" 
 
 		cp "$HOME/Installer/configs/wallpapers/streetview.png" "/home/$USERNAME/Pictures/"
-		cp "$HOME/Installer/configs/hyprpaper.conf" "/home/$USERNAME/.config/hypr/"
-		cp "$HOME/Installer/configs/.config/kitty/kitty.conf*" "/home/$USERNAME/.config/kitty"
+		cp "$HOME/Installer/configs/hyprland/.config/*" "/home/$USERNAME/.config/"
+		cp "$HOME/Installer/configs/.config/kitty/" "/home/$USERNAME/.config/"
 		
 		# Set ownership of the home directory
 		chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
