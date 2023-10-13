@@ -1,4 +1,5 @@
 hyprland
+hyprpaper
 polkit-gnome
 ffmpeg
 neovim
