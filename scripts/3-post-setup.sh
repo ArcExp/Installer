@@ -87,8 +87,6 @@ else
     		"/home/$USERNAME/Templates" \
     		"/home/$USERNAME/Videos" \
     		"/home/$USERNAME/.config" \
-    		"/home/$USERNAME/.local" \
-    		"/home/$USERNAME/.local/bin" 
 
 		cp "$HOME/Installer/configs/wallpapers/streetview.png" "/home/$USERNAME/Pictures/"
 		cp "$HOME/Installer/configs/hyprland/.config/*" "/home/$USERNAME/.config/"
