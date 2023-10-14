@@ -2,23 +2,20 @@ hyprland
 hyprpaper
 polkit-gnome
 ffmpeg
-viewnior
 wofi
 waybar
 pavucontrol
-thunar
+nautilus
 starship
 wl-clipboard
 wf-recorder
-swaybg
-grimblast-git
 ffmpegthumbnailer
-tumbler
 playerctl
+swaylock
+eog
+wlogout
 noise-suppression-for-voice
-thunar-archive-plugin
 alacritty-git
-gvfs
 wlogout
 swaylock-effects
 sddm-git
@@ -38,6 +35,7 @@ ttf-comfortaa
 ttf-jetbrains-mono-nerd
 ttf-icomoon-feather
 ttf-iosevka-nerd
+hyprshot
 adobe-source-code-pro-fonts
 brightnessctl
 --END OF MINIMAL INSTALL--
