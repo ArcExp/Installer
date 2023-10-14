@@ -1,6 +1,7 @@
 plasma-desktop
 sddm
 dolphin
+firefox
 --END OF MINIMAL INSTALL--
 ark
 audiocd-kio
