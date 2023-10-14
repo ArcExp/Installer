@@ -89,8 +89,10 @@ else
     		"/home/$USERNAME/.config" \
 
 		cp "$HOME/Installer/configs/wallpapers/streetview.png" "/home/$USERNAME/Pictures/"
+		shopt -s dotglob
 		cp -R "$HOME/Installer/configs/hyprland-dots/.config/*" "/home/$USERNAME/.config/"
-		
+		shopt -u dotglob
+
 		# Set ownership of the home directory
 		chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
   fi
