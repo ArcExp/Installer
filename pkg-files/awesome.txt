@@ -14,8 +14,6 @@ zsh
 dunst
 rofi
 feh
-lightdm-webkit2-greeter
-lightdm-webkit-theme-litarvan
 lxappearance
 qt5ct
 gsimplecal
@@ -28,7 +26,7 @@ thunar-media-tags-plugin
 tumbler
 jq
 w3m
-geany
+gedit
 nano
 viewnior
 pavucontrol
@@ -42,4 +40,3 @@ imagemagick
 playerctl
 xsettingsd
 obconf
-
