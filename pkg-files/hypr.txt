@@ -4,6 +4,7 @@ polkit-gnome
 ffmpeg
 viewnior
 wofi
+waybar
 pavucontrol
 thunar
 starship
