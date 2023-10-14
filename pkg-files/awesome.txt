@@ -4,6 +4,7 @@ lightdm-gtk-greeter
 thunar
 lxsession
 rxvt-unicode
+firefox
 --END OF MINIMAL INSTALL--
 alsa-utils
 pulseaudio
