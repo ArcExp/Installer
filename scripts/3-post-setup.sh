@@ -86,11 +86,10 @@ else
     		"/home/$USERNAME/Public" \
     		"/home/$USERNAME/Templates" \
     		"/home/$USERNAME/Videos" \
-    		"/home/$USERNAME/.config" \
 
 		cp "$HOME/Installer/configs/wallpapers/streetview.png" "/home/$USERNAME/Pictures/"
 		shopt -s dotglob
-		cp -R "$HOME/Installer/configs/hyprland-dots/.config/*" "/home/$USERNAME/.config/"
+		cp -R "$HOME/Installer/configs/hyprland-dots/.config" "/home/$USERNAME/"
 		shopt -u dotglob
 
 		# Set ownership of the home directory
