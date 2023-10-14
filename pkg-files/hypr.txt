@@ -2,9 +2,8 @@ hyprland
 hyprpaper
 polkit-gnome
 ffmpeg
-neovim
 viewnior
-rofi
+wofi
 pavucontrol
 thunar
 starship
@@ -17,8 +16,8 @@ tumbler
 playerctl
 noise-suppression-for-voice
 thunar-archive-plugin
-kitty
-waybar-hyprland
+alacritty-git
+gvfs
 wlogout
 swaylock-effects
 sddm-git
@@ -40,5 +39,4 @@ ttf-icomoon-feather
 ttf-iosevka-nerd
 adobe-source-code-pro-fonts
 brightnessctl
-hyprpicker-git
 --END OF MINIMAL INSTALL--
