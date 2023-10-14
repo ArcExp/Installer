@@ -1,4 +1,5 @@
 cinnamon
 metacity 
-gnome-shell 
+gnome-shell
+firefox
 --END OF MINIMAL INSTALL--
