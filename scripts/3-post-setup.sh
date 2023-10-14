@@ -77,7 +77,7 @@ else
   fi
 
   if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
-  $AUR_HELPER -S --noconfirm --needed sddm-git nautilus
+  $AUR_HELPER -S --noconfirm --needed sddm-git nautilus gedit
   systemctl disable lightdm && sudo pacman -R --noconfirm lightdm lightdm-gtk-greeter
   	mkdir -p "/home/$USERNAME/Desktop" \
     		"/home/$USERNAME/Documents" \
