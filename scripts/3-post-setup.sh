@@ -118,22 +118,14 @@ echo "  Bluetooth enabled"
 systemctl enable avahi-daemon.service
 echo "  Avahi enabled"
 
-if [[ "${FS}" == "luks" || "${FS}" == "btrfs" ]]; then
+if [[ "${FS}" == "btrfs" ]]; then
 echo -ne "
 -------------------------------------------------------------------------
-                    Creating Snapper Config
+                    Installing Timeshift-Autosnap
 -------------------------------------------------------------------------
 "
 
-SNAPPER_CONF="$HOME/Installer/configs/etc/snapper/configs/root"
-mkdir -p /etc/snapper/configs/
-cp -rfv ${SNAPPER_CONF} /etc/snapper/configs/
 
-SNAPPER_CONF_D="$HOME/Installer/configs/etc/conf.d/snapper"
-mkdir -p /etc/conf.d/
-cp -rfv ${SNAPPER_CONF_D} /etc/conf.d/
-
-fi
 
 echo -ne "
 -------------------------------------------------------------------------
