@@ -1,6 +1,6 @@
 hyprland
 hyprpaper
-polkit-gnome
+polkit-kde-agent
 ffmpeg
 wofi
 waybar
@@ -17,7 +17,6 @@ wlogout
 noise-suppression-for-voice
 alacritty-git
 wlogout
-swaylock-effects
 sddm-git
 pamixer
 nwg-look-bin
@@ -38,4 +37,11 @@ ttf-iosevka-nerd
 hyprshot
 adobe-source-code-pro-fonts
 brightnessctl
+pipeline
+wireplumber
+qt5-wayland
+qt6-wayland
+cliphist
+udiske
+swaylock-effects
 --END OF MINIMAL INSTALL--
