@@ -1,5 +1,8 @@
 gnome
 firefox
 gedit
+bluez
+bluez-utils
+gnome-bluetooth
 --END OF MINIMAL INSTALL--
 gnome-extra
