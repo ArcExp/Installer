@@ -1,0 +1,9 @@
+(defwidget notifications_popup_widget []
+    (box :orientation "v" :space-evenly false
+        (for notify in {notifications.popups}
+            (box :orientation "h" :space-evenly false :class "notifications-popup-body"
+                (notification :notify {notify})
+            )
+        )
+    )
+)

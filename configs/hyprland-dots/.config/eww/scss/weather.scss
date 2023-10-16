@@ -1,0 +1,25 @@
+.weather {
+    background-color: $surfaceVariant;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.weather-icon {
+    font-size: 4rem;
+}
+
+.weather-desc {
+    color: $primary;
+    font-size: 1.5rem;
+}
+
+.weather-temp {
+    color: $primary;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+.weather-error {
+    font-size: 1.1rem;
+}
