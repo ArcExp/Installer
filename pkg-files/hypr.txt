@@ -42,6 +42,6 @@ wireplumber
 qt5-wayland
 qt6-wayland
 cliphist
-udiske
+udiskie
 swaylock-effects
 --END OF MINIMAL INSTALL--
