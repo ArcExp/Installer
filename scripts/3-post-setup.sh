@@ -89,9 +89,10 @@ else
     		"/home/$USERNAME/Templates" \
     		"/home/$USERNAME/Videos" \
 
-		cp "$HOME/Installer/configs/wallpapers/streetview.png" "/home/$USERNAME/Pictures/"
 		shopt -s dotglob
 		cp -R "$HOME/Installer/configs/hyprland-dots/.config" "/home/$USERNAME/"
+  		cp -R "$HOME/Installer/configs/hyprland-dots/.wallpaper" "/home/$USERNAME/"
+    		cp -R "$HOME/Installer/configs/hyprland-dots/.icons" "/home/$USERNAME/"
 		shopt -u dotglob
 
 		# Set ownership of the home directory
