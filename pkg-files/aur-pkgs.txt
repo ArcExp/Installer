@@ -1,5 +1,4 @@
 --END OF MINIMAL INSTALL--
-autojump
 bridge-utils
 dxvk-bin
 lightly-git
