@@ -1,54 +1,40 @@
-#window {
-	border-radius: 10;
-	background-color: rgba(--wofi-rgb-color1, 0.5);
-	font-size: 18px;
-	font-family: "Fira Code Medium";
-}
-
-#outer-box {
-	margin: 5px;
+window {
+  /* border: 2px solid red; */
+  background-color: #1e222a;
+  padding: 50px;
 }
 
 #input {
-	border: 0;
-	border-radius: 0;
-	background-color: transparent;
-	color: --wofi-color0;
-	margin: 10px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin: 20px 15px;
 }
 
-#input image:first-child {
-	margin-left: -100px;
+#input:focus,
+#input:selected,
+#entry:selected,
+#entry:focus {
+  border-color: transparent;
 }
 
-#input image:last-child {
-	margin-right: -100px;
-}
-
-#input:focus {
-	border-radius: 0;
-}
-
-#entry {
-	color: --wofi-color0;
-	
-}
-
-#entry:selected {
-	background-color: rgba(--wofi-rgb-color0, 0.94);
-}
-
-#text:selected {
-	color: --wofi-color1;
+#inner-box {
+  margin: 20px;
 }
 
 #img {
-	margin-right: 5px;
-	margin-left: 3px;
-	margin-top: 3px;
-	margin-bottom: 3px;
+  margin: 10px 10px;
 }
 
-#text {
-	margin-left: 3px;
+#entry {
+  border-radius: 20px;
+}
+
+#text:selected,
+#img:selected {
+  background-color: transparent;
+}
+
+#entry:selected {
+  background-color: rgba(255, 255, 255, 0.1);
 }
