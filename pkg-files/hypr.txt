@@ -18,9 +18,6 @@ noise-suppression-for-voice
 alacritty-git
 wlogout
 sddm-git
-pamixer
-nordic-theme
-papirus-icon-theme
 dunst
 hyprshot
 brightnessctl
