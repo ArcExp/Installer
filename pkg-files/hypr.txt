@@ -1,6 +1,6 @@
 hyprland
 hyprpaper
-polkit-kde-agent
+polkit-gnome
 ffmpeg
 wofi
 waybar
@@ -27,4 +27,7 @@ qt5-wayland
 qt6-wayland
 cliphist
 udiskie
+bluez
+bluez-utils
+blueman
 --END OF MINIMAL INSTALL--
