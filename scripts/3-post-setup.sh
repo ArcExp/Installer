@@ -132,6 +132,7 @@ echo -ne "
 "
 
 $AUR_HELPER -S --noconfirm timeshift-bin timeshift-autosnap
+fi
 
 echo -ne "
 -------------------------------------------------------------------------
