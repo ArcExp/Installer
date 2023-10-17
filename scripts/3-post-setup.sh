@@ -76,6 +76,7 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
   gsettings set org.gnome.desktop.interface icon-theme Papirus
   gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
+  
   	mkdir -p "/home/$USERNAME/Desktop" \
     		"/home/$USERNAME/Documents" \
     		"/home/$USERNAME/Downloads" \
