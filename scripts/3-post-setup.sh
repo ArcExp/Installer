@@ -97,6 +97,13 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 
 		# Set ownership of the home directory
 		chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
+
+else
+  if [[ "${DESKTOP_ENV}" == "server"  ]]; then
+  sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter
+  systemctl set-default graphical.target
+  systemctl enable lightdm.service
+  fi
 fi
 
 echo -ne "
