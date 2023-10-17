@@ -96,6 +96,8 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 	# Set ownership of the home directory
 	chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
 
+	$AUR_HELPER -S --needed hyprland-git
+  	
   	# mkdir /usr/share/wayland-sessions/
 	# cp "$HOME/Installer/configs/usr/share/wayland-sessions/Hyprland.desktop" "/usr/share/wayland-sessions/"
 
