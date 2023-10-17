@@ -70,9 +70,12 @@ elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
 
 elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
-  $AUR_HELPER -R --noconfirm pipewire-media-session
-  $AUR_HELPER -S --noconfirm --needed hyprland-git sddm-git firefox gedit udiskie swaylock-effects cliphist qt5-wayland qt6-wayland wlogout pipewire wireplumber polkit-gnome
   systemctl enable sddm
+  systemctl --user enable --now pipewire.service pipewire.socket pipewire-pulse.service wireplumber.service
+  LC_ALL=C xdg-user-dirs-update --force
+  gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
+  gsettings set org.gnome.desktop.interface icon-theme Papirus
+  gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
   	mkdir -p "/home/$USERNAME/Desktop" \
     		"/home/$USERNAME/Documents" \
     		"/home/$USERNAME/Downloads" \
