@@ -20,13 +20,6 @@ Installing AUR Softwares
 "
 source $HOME/Installer/configs/setup.conf
 
-  cd ~
-  mkdir "/home/$USERNAME/.cache"
-  touch "/home/$USERNAME/.cache/zshhistory"
-  git clone "https://github.com/ChrisTitusTech/zsh"
-  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-  ln -s "~/zsh/.zshrc" ~/.zshrc
-
 sed -n '/'$INSTALL_TYPE'/q;p' ~/Installer/pkg-files/${DESKTOP_ENV}.txt | while read line
 do
   if [[ ${line} == '--END OF MINIMAL INSTALL--' ]]
