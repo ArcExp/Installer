@@ -96,7 +96,6 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 	        # Set ownership of the home directory
 		chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
 
-  		mkdir /usr/
     		mkdir /usr/share
       		mkdir /usr/share/wayland-sessions/
 	
