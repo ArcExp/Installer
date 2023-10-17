@@ -17,7 +17,7 @@ playerctl
 gradience-git
 adw-gtk3-git
 jq
-sddm-git
+sddm
 rustup
 eww-tray-wayland-git
 polkit-gnome
