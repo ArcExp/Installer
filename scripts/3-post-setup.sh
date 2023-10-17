@@ -119,7 +119,7 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 
-$AUR_HELPER -S --noconfirm --needed timeshift-bin timeshift-autosnap
+$AUR_HELPER -S --noconfirm timeshift-bin timeshift-autosnap
 
 echo -ne "
 -------------------------------------------------------------------------
