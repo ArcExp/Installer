@@ -93,10 +93,14 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
     		cp -R "$HOME/Installer/configs/hyprland-dots/.icons" "/home/$USERNAME/"
 		shopt -u dotglob
 
-		cp -R "$HOME/Installer/configs/usr/share/wayland-sessions/Hyprland.desktop" "/usr/share/wayland-sessions/"
-
-		# Set ownership of the home directory
+	        # Set ownership of the home directory
 		chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
+
+  		mkdir /usr/
+    		mkdir /usr/share
+      		mkdir /usr/share/wayland-sessions/
+	
+		cp "$HOME/Installer/configs/usr/share/wayland-sessions/Hyprland.desktop" "/usr/share/wayland-sessions/"
 
 else
   if [[ "${DESKTOP_ENV}" == "server"  ]]; then
