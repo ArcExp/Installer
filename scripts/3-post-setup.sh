@@ -167,7 +167,7 @@ sed -i 's/^# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/' /etc/sudoers
 sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
 rm -r $HOME/Installer
-rm -r /home/$USERNAMENAME/Installer
+rm -r /home/$USERNAME/Installer
 
 # Replace in the same state
 cd $pwd
