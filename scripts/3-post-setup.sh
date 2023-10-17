@@ -154,7 +154,7 @@ echo 'Plymouth theme installed'
 
 echo -ne "
 -------------------------------------------------------------------------
-                    Cleaning
+                    Cleaning Up
 -------------------------------------------------------------------------
 "
 # Remove no password sudo rights
