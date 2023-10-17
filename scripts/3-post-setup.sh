@@ -93,7 +93,6 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 
 		# Set ownership of the home directory
 		chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
-  fi
 fi
 
 echo -ne "
