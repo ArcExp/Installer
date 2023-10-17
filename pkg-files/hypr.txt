@@ -18,7 +18,7 @@ gradience-git
 adw-gtk3-git
 jq
 sddm-git
-rustup
+rust
 eww-tray-wayland-git
 polkit-gnome
 swww
