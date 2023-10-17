@@ -101,12 +101,11 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
                     Verify Packages Are Installed 
 -------------------------------------------------------------------------
 "
-$AUR_HELPER -S --needed hyprland-git xdg-desktop-portal-hyprland xorg-xwayland qt5-wayland qt6-wayland qt5ct qt6ct libva linux-headers pipewire pipewire-alsa pipewire-pulse pipewire-jack \
-pavucontrol wireplumber ripgrep playerctl gradience-git adw-gtk3-git jq sddm rust eww-tray-wayland-git polkit-gnome swww gtklock pamixer cliphist grimblast-git gnome-control-center alacritty-git \
-thunar thunar-archive-plugin file-roller xdg-user-dirs wf-recorder dbus-python python-gobject python-requests python-jinja python-material-color-utilities zenity socat ttf-jetbrains-mono ttf-nerd-fonts-symbols papirus-icon-theme
-  	
+
+# add code to compare installed packages (with pacman -Q) with hypr.txt here, later
+
   	mkdir /usr/share/wayland-sessions/
-	cp "$HOME/Installer/configs/usr/share/wayland-sessions/Hyprland.desktop" "/usr/share/wayland-sessions/"
+	cp "$HOME/Installer/configs/usr/share/wayland-sessions/hyprland.desktop" "/usr/share/wayland-sessions/"
 
 else
   if [[ "${DESKTOP_ENV}" == "server"  ]]; then
