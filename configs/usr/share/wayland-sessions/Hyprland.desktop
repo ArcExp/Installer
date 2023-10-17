@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Hyprland
 Comment=Hyperland wayland session
-Exec=Hyprland
+Exec=Hyprland-git
 Type=Application
