@@ -69,16 +69,8 @@ if [[ "${DESKTOP_ENV}" == "kde" ]]; then
 elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
 
-else
-  if [[ "${DESKTOP_ENV}" != "server" ]]; then
-    sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter
-    systemctl enable lightdm.service
-    sed -i 's/#greeter-session=example.*/greeter-session=lightdm-gtk-greeter/g' /etc/lightdm/lightdm.conf
-  fi
-
-  if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
+elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   $AUR_HELPER -S --noconfirm --needed sddm-git firefox nautilus gedit udiskie swaylock-effects cliphist qt5-wayland qt6-wayland wlogout pipewire wireplumber polkit-gnome
-  systemctl disable lightdm && sudo pacman -R --noconfirm lightdm lightdm-gtk-greeter
   systemctl enable sddm
   	mkdir -p "/home/$USERNAME/Desktop" \
     		"/home/$USERNAME/Documents" \
@@ -110,10 +102,6 @@ echo "  Cups enabled"
 ntpd -qg
 systemctl enable ntpd.service
 echo "  NTP enabled"
-systemctl disable dhcpcd.service
-echo "  DHCP disabled"
-systemctl stop dhcpcd.service
-echo "  DHCP stopped"
 systemctl enable NetworkManager.service
 echo "  NetworkManager enabled"
 systemctl enable bluetooth
