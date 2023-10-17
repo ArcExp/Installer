@@ -70,9 +70,10 @@ elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
 
 elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
-  systemctl enable sddm
+  systemctl enable sddm.service
   systemctl --user enable --now pipewire.service pipewire.socket pipewire-pulse.service wireplumber.service
   LC_ALL=C xdg-user-dirs-update --force
+  
   gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
   gsettings set org.gnome.desktop.interface icon-theme Papirus
   gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
@@ -91,6 +92,8 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   		cp -R "$HOME/Installer/configs/hyprland-dots/.wallpaper" "/home/$USERNAME/"
     		cp -R "$HOME/Installer/configs/hyprland-dots/.icons" "/home/$USERNAME/"
 		shopt -u dotglob
+
+		cp -R "$HOME/Installer/configs/usr/share/wayland-sessions/Hyprland.desktop" "/usr/share/wayland-sessions/"
 
 		# Set ownership of the home directory
 		chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
