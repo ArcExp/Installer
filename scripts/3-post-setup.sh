@@ -70,7 +70,7 @@ elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
 
 elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
-  $AUR_HELPER -S --noconfirm --needed sddm-git firefox nautilus gedit udiskie swaylock-effects cliphist qt5-wayland qt6-wayland wlogout pipewire wireplumber polkit-gnome
+  $AUR_HELPER -S --noconfirm --needed hyprland-git sddm-git firefox gedit udiskie swaylock-effects cliphist qt5-wayland qt6-wayland wlogout pipewire wireplumber polkit-gnome
   systemctl enable sddm
   	mkdir -p "/home/$USERNAME/Desktop" \
     		"/home/$USERNAME/Documents" \
