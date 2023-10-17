@@ -2,8 +2,6 @@
 bridge-utils
 lightly-git
 lightlyshaders-git
-mangohud
-mangohud-common
 nerd-fonts-fira-code
 ocs-url
 plymouth-git
