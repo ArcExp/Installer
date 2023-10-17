@@ -77,7 +77,7 @@ else
   fi
 
   if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
-  $AUR_HELPER -S --noconfirm --needed sddm-git firefox nautilus gedit udiskie swaylock-effects cliphist qt5-wayland qt6-wayland wlogout pipewire wireplumber polkit-kde-agent
+  $AUR_HELPER -S --noconfirm --needed sddm-git firefox nautilus gedit udiskie swaylock-effects cliphist qt5-wayland qt6-wayland wlogout pipewire wireplumber polkit-gnome
   systemctl disable lightdm && sudo pacman -R --noconfirm lightdm lightdm-gtk-greeter
   systemctl enable sddm
   	mkdir -p "/home/$USERNAME/Desktop" \
