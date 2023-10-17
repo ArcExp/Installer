@@ -87,25 +87,25 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
     		"/home/$USERNAME/Templates" \
     		"/home/$USERNAME/Videos" \
 
-		shopt -s dotglob
-		cp -R "$HOME/Installer/configs/hyprland-dots/.config" "/home/$USERNAME/"
-  		cp -R "$HOME/Installer/configs/hyprland-dots/.wallpaper" "/home/$USERNAME/"
-    		cp -R "$HOME/Installer/configs/hyprland-dots/.icons" "/home/$USERNAME/"
-		shopt -u dotglob
+	shopt -s dotglob
+	cp -R "$HOME/Installer/configs/hyprland-dots/.config" "/home/$USERNAME/"
+  	cp -R "$HOME/Installer/configs/hyprland-dots/.wallpaper" "/home/$USERNAME/"
+    	cp -R "$HOME/Installer/configs/hyprland-dots/.icons" "/home/$USERNAME/"
+	shopt -u dotglob
 
-	        # Set ownership of the home directory
-		chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
+	# Set ownership of the home directory
+	chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
 
-    		mkdir /usr/share
-      		mkdir /usr/share/wayland-sessions/
+  	mkdir /usr/share
+  	mkdir /usr/share/wayland-sessions/
 	
-		cp "$HOME/Installer/configs/usr/share/wayland-sessions/Hyprland.desktop" "/usr/share/wayland-sessions/"
+	cp "$HOME/Installer/configs/usr/share/wayland-sessions/Hyprland.desktop" "/usr/share/wayland-sessions/"
 
 else
   if [[ "${DESKTOP_ENV}" == "server"  ]]; then
-  sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter
-  systemctl set-default graphical.target
-  systemctl enable lightdm.service
+    sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter
+    systemctl set-default graphical.target
+    systemctl enable lightdm.service
   fi
 fi
 
@@ -167,7 +167,7 @@ sed -i 's/^# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/' /etc/sudoers
 sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
 rm -r $HOME/Installer
-rm -r /home/$USERNAME/Installer
+rm -r /home/$USERNAMENAME/Installer
 
 # Replace in the same state
 cd $pwd
