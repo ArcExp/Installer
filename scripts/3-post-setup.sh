@@ -90,9 +90,10 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 
   shopt -s dotglob
   cp -R "$HOME/Installer/configs/hyprland-dots/.config" "/home/$USERNAME/"
-  mkdir -p "/home/$USERNAME/.wallpaper"
-  cp -R "$HOME/Installer/configs/wallpapers/*" "/home/$USERNAME/.wallpaper/"
   cp -R "$HOME/Installer/configs/hyprland-dots/.icons" "/home/$USERNAME/"
+
+  mkdir -p "/home/$USERNAME/.wallpaper"
+  cp "$HOME/Installer/configs/wallpapers/*" "/home/$USERNAME/.wallpaper/"
   shopt -u dotglob
 
   # Set ownership of the home directory
