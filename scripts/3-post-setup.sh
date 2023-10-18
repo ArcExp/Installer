@@ -116,16 +116,14 @@ while IFS= read -r package; do
     if ! is_installed "$package"; then
         echo "Installing $package"
         sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm "$package"
-    else
-        echo "$package is already installed"
     fi
 done < "$HYPR_FILE"
 
 else
   if [[ "${DESKTOP_ENV}" == "server"  ]]; then
-    sudo pacman -S --noconfirm --needed lightdm lightdm-gtk-greeter
+    sudo pacman -S --noconfirm --needed sddm
     systemctl set-default graphical.target
-    systemctl enable lightdm.service
+    systemctl enable sddm.service
   fi
 fi
 
