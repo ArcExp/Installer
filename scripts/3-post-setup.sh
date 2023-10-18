@@ -115,7 +115,7 @@ is_installed() {
 while IFS= read -r package; do
     if ! is_installed "$package"; then
         echo "Installing $package"
-        sudo -u "$USERNAME" "$AUR_HELPER" -S "$package"
+        sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm "$package"
     else
         echo "$package is already installed"
     fi
@@ -156,7 +156,7 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 
-$AUR_HELPER -S --noconfirm timeshift-bin timeshift-autosnap
+sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm timeshift-bin timeshift-autosnap
 fi
 
 echo -ne "
