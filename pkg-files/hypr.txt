@@ -20,6 +20,10 @@ adw-gtk3-git
 jq
 eww-tray-wayland-git
 polkit-gnome
+gedit
+eog
+hyprpaper
+hyprshot
 swww
 gtklock
 pamixer
