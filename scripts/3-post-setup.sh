@@ -70,8 +70,8 @@ elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
 
 elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
-  systemctl enable sddm.service
-  systemctl --user enable --now pipewire.service pipewire.socket pipewire-pulse.service wireplumber.service
+  # systemctl enable sddm.service
+  systemctl enable pipewire.service pipewire.socket pipewire-pulse.service wireplumber.service
   LC_ALL=C xdg-user-dirs-update --force
   
   gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
@@ -121,8 +121,8 @@ while IFS= read -r package; do
     fi
 done < "$HYPR_FILE"
 
-  	mkdir -p /usr/share/wayland-sessions/
-	cp "$HOME/Installer/configs/usr/share/wayland-sessions/hyprland.desktop" "/usr/share/wayland-sessions/"
+  	# mkdir -p /usr/share/wayland-sessions/
+	# cp "$HOME/Installer/configs/usr/share/wayland-sessions/hyprland.desktop" "/usr/share/wayland-sessions/"
 
 else
   if [[ "${DESKTOP_ENV}" == "server"  ]]; then
