@@ -61,6 +61,7 @@ echo -ne "
 "
 if [[ "${DESKTOP_ENV}" == "kde" ]]; then
   systemctl enable sddm.service
+  sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm noisetorch steam-acolyte
   if [[ "${INSTALL_TYPE}" == "FULL" ]]; then
     echo "[Theme]" >> /etc/sddm.conf
     echo "Current=Nordic" >> /etc/sddm.conf
