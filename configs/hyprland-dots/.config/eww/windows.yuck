@@ -1,0 +1,69 @@
+(defwindow bar
+    :monitor 0
+    :geometry (geometry :width "100%"
+                        :anchor "bottom center")
+    :exclusive true
+    :namespace "eww"
+    (bar)
+)
+  
+(defwindow clipboard
+    :monitor 0
+    :stacking "fg"
+    :geometry (geometry
+                    :anchor "center"
+                )
+    :namespace "eww"
+    (clipboard_widget)
+)
+
+(defwindow control_center
+    :monitor 0
+    :stacking "fg"
+    :geometry (geometry
+                    :anchor "bottom right"
+                )
+    :namespace "eww"
+    (control_center)
+)
+
+(defwindow launcher
+    :monitor 0
+    :stacking "fg"
+    :geometry (geometry
+                    :anchor "left bottom"
+                )
+    :focusable true
+    :namespace "eww"
+    (launcher)
+)
+
+(defwindow notifications_popup
+    :monitor 0
+    :stacking "fg"
+    :geometry (geometry
+                    :anchor "top center"
+                )
+    :namespace "eww"
+    (notifications_popup_widget)
+)
+
+(defwindow osd
+    :monitor 0
+    :stacking "fg"
+    :geometry (geometry 
+                    :anchor "bottom center")
+    :namespace "eww"
+    (volume_osd)
+)
+
+(defwindow powermenu
+    :monitor 0
+    :stacking "fg"
+    :geometry (geometry 
+                    :anchor "center"
+                    :width "100%"
+                    :height "120%")
+    :namespace "eww-blur"
+    (powermenu)
+)
