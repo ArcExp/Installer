@@ -1,1 +1,2 @@
+plymouth-git
 --END OF MINIMAL INSTALL--
