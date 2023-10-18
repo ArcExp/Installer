@@ -103,9 +103,25 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 -------------------------------------------------------------------------
 "
 
-# add code to compare installed packages (with pacman -Q) with hypr.txt here, later
+# Path to the hypr.txt file
+HYPR_FILE="$HOME/Installer/pkg-files/hypr.txt"
 
-  	mkdir /usr/share/wayland-sessions/
+# Function to check if a package is installed
+is_installed() {
+    pacman -Q "$1" &>/dev/null
+}
+
+# Read the package names from hypr.txt and install missing packages
+while IFS= read -r package; do
+    if ! is_installed "$package"; then
+        echo "Installing $package"
+        sudo -u "$USERNAME" "$AUR_HELPER" -S "$package"
+    else
+        echo "$package is already installed"
+    fi
+done < "$HYPR_FILE"
+
+  	mkdir -p /usr/share/wayland-sessions/
 	cp "$HOME/Installer/configs/usr/share/wayland-sessions/hyprland.desktop" "/usr/share/wayland-sessions/"
 
 else
