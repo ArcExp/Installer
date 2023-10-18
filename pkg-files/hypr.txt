@@ -966,6 +966,7 @@ yarn
 zenity
 zeromq
 zimg
+--END OF MINIMAL INSTALL--
 zip
 zlib
 zstd
