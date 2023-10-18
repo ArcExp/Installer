@@ -89,8 +89,8 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 
 	shopt -s dotglob
 	cp -R "$HOME/Installer/configs/hyprland-dots/.config" "/home/$USERNAME/"
- 	mkdir "/home/$USERNAME/.wallpaper"
-  	cp "$HOME/Installer/configs/hyprland-dots/wallpaper/*" "/home/$USERNAME/.wallpaper/"
+ 	mkdir -p "/home/$USERNAME/.wallpaper"
+  	cp "$HOME/Installer/configs/hyprland-dots/wallpapers/*" "/home/$USERNAME/.wallpaper/"
     	cp -R "$HOME/Installer/configs/hyprland-dots/.icons" "/home/$USERNAME/"
 	shopt -u dotglob
 
@@ -120,9 +120,6 @@ while IFS= read -r package; do
         echo "$package is already installed"
     fi
 done < "$HYPR_FILE"
-
-  	# mkdir -p /usr/share/wayland-sessions/
-	# cp "$HOME/Installer/configs/usr/share/wayland-sessions/hyprland.desktop" "/usr/share/wayland-sessions/"
 
 else
   if [[ "${DESKTOP_ENV}" == "server"  ]]; then
