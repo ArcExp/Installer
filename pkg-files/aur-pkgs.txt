@@ -5,8 +5,6 @@ lightlyshaders-git
 nerd-fonts-fira-code
 ocs-url
 plymouth-git
-sddm-sugar-dark
 ttf-meslo
 vde2
 ttf-ms-fonts
-alacritty-git
