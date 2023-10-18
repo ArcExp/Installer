@@ -1,4 +1,4 @@
-hyprland-git
+hyprland #hyprland-git
 gdb
 ninja
 gcc
