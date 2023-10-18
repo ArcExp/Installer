@@ -74,60 +74,62 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   systemctl enable sddm.service
   systemctl enable pipewire.service pipewire.socket pipewire-pulse.service wireplumber.service
   LC_ALL=C xdg-user-dirs-update --force
-  
+
   gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
   gsettings set org.gnome.desktop.interface icon-theme Papirus
   gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
-  
-  	mkdir -p "/home/$USERNAME/Desktop" \
-    		"/home/$USERNAME/Documents" \
-    		"/home/$USERNAME/Downloads" \
-    		"/home/$USERNAME/Music" \
-    		"/home/$USERNAME/Pictures" \
-    		"/home/$USERNAME/Public" \
-    		"/home/$USERNAME/Templates" \
-    		"/home/$USERNAME/Videos" \
 
-	shopt -s dotglob
-	cp -R "$HOME/Installer/configs/hyprland-dots/.config" "/home/$USERNAME/"
- 	mkdir -p "/home/$USERNAME/.wallpaper"
-  	cp "$HOME/Installer/configs/wallpapers/*" "/home/$USERNAME/.wallpaper/"
-    	cp -R "$HOME/Installer/configs/hyprland-dots/.icons" "/home/$USERNAME/"
-	shopt -u dotglob
+  mkdir -p "/home/$USERNAME/Desktop" \
+    "/home/$USERNAME/Documents" \
+    "/home/$USERNAME/Downloads" \
+    "/home/$USERNAME/Music" \
+    "/home/$USERNAME/Pictures" \
+    "/home/$USERNAME/Public" \
+    "/home/$USERNAME/Templates" \
+    "/home/$USERNAME/Videos"
 
-	# Set ownership of the home directory
-	chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
+  shopt -s dotglob
+  cp -R "$HOME/Installer/configs/hyprland-dots/.config" "/home/$USERNAME/"
+  mkdir -p "/home/$USERNAME/.wallpaper"
+  cp -R "$HOME/Installer/configs/wallpapers/*" "/home/$USERNAME/.wallpaper/"
+  cp -R "$HOME/Installer/configs/hyprland-dots/.icons" "/home/$USERNAME/"
+  shopt -u dotglob
 
-	echo -ne "
--------------------------------------------------------------------------
-                    Verify Packages Are Installed 
--------------------------------------------------------------------------
-"
+  # Set ownership of the home directory
+  chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
 
-# Path to the hypr.txt file
-HYPR_FILE="$HOME/Installer/pkg-files/hypr.txt"
+  echo -ne "Verify Packages Are Installed\n"
 
-# Function to check if a package is installed
-is_installed() {
-    pacman -Q "$1" &>/dev/null
-}
+  # Path to the hypr.txt file
+  HYPR_FILE="$HOME/Installer/pkg-files/hypr.txt"
 
-# Read the package names from hypr.txt and install missing packages
-while IFS= read -r package; do
-    if ! is_installed "$package"; then
-        echo "Installing $package"
-        sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm "$package"
-    fi
-done < "$HYPR_FILE"
+  # Function to check if a package is installed
+  is_installed() {
+      pacman -Q "$1" &>/dev/null
+  }
+
+  # Read the package names from hypr.txt and install missing packages
+  while IFS= read -r package; do
+      if ! is_installed "$package"; then
+          echo "Installing $package"
+          sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm "$package"
+      fi
+  done < "$HYPR_FILE"
 
 else
   if [[ "${DESKTOP_ENV}" == "server"  ]]; then
     sudo pacman -S --noconfirm --needed sddm
     systemctl set-default graphical.target
-    systemctl enable sddm.service
   fi
 fi
 
+if [[ "${DESKTOP_ENV}" == "kde" || "${DESKTOP_ENV}" == "gnome" || "${DESKTOP_ENV}" == "hypr" || "${DESKTOP_ENV}" == "server" ]]; then
+  if [[ "${FS}" == "btrfs" ]]; then
+    echo -ne "Installing Timeshift-Autosnap\n"
+    sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm timeshift-bin timeshift-autosnap
+  fi
+fi
+  
 echo -ne "
 -------------------------------------------------------------------------
                     Enabling Essential Services
@@ -144,16 +146,6 @@ systemctl enable bluetooth
 echo "  Bluetooth enabled"
 systemctl enable avahi-daemon.service
 echo "  Avahi enabled"
-
-if [[ "${FS}" == "btrfs" ]]; then
-echo -ne "
--------------------------------------------------------------------------
-                    Installing Timeshift-Autosnap
--------------------------------------------------------------------------
-"
-
-sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm timeshift-bin timeshift-autosnap
-fi
 
 echo -ne "
 -------------------------------------------------------------------------
