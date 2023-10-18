@@ -1,0 +1,14 @@
+(defwidget control_center []
+    (revealer :transition "slideleft" :reveal {open_control_center == true ? true : false} :duration "700ms"
+        (box :orientation "v" :space-evenly false
+            (notifications)
+            (box :orientation "v" :space-evenly false :class "control-center"
+                (user)
+                (quick_settings)
+                (volume_control_center)
+                (weather)
+                (media)
+            )
+        )
+    )
+)
