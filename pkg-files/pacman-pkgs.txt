@@ -16,6 +16,7 @@ linux-headers
 noto-fonts-emoji
 usbutils
 xdg-user-dirs
+firefox
 --END OF MINIMAL INSTALL--
 alsa-plugins
 alsa-utils
@@ -34,8 +35,6 @@ ntfs-3g
 ntp
 os-prober
 p7zip
-qemu
 terminus-font
 unrar
 unzip
-firefox
