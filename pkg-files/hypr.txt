@@ -1,5 +1,4 @@
 rustup
-cargo
 eww-tray-wayland-git
 hyprland-git
 xdg-desktop-portal-hyprland
