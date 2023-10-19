@@ -66,11 +66,11 @@ if [[ "${DESKTOP_ENV}" == "kde" ]]; then
   echo "Current=sugar-dark" >> /etc/sddm.conf
 fi
 
-elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
+if [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
 fi
 
-elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
+if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   systemctl enable sddm.service
   systemctl enable pipewire.service pipewire.socket pipewire-pulse.service wireplumber.service
   LC_ALL=C xdg-user-dirs-update --force
