@@ -74,8 +74,8 @@ echo -ne "
 "
 # @description Creates the Btrfs subvolumes.
 createsubvolumes () {
-    btrfs subvolume create /mnt/@
     mkdir -p /mnt/home
+    btrfs subvolume create /mnt/@
     btrfs subvolume create /mnt/@home
 }
 
