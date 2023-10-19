@@ -1,7 +1,6 @@
 plasma-desktop
 sddm
 dolphin
-firefox
 --END OF MINIMAL INSTALL--
 ark
 audiocd-kio
@@ -38,3 +37,4 @@ spectacle
 systemsettings
 xdg-desktop-portal-kde
 zeroconf-ioslave
+sddm-sugar-dark
