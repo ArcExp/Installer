@@ -29,7 +29,6 @@ swww
 gtklock
 pamixer
 cliphist
-grimblast-git
 gnome-control-center
 kitty
 sddm
