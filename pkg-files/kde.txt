@@ -1,6 +1,7 @@
 plasma-desktop
 sddm
 dolphin
+sddm-sugar-dark
 --END OF MINIMAL INSTALL--
 ark
 audiocd-kio
@@ -8,7 +9,6 @@ bluedevil
 breeze
 breeze-gtk
 discover
-extra-cmake-modules
 filelight
 gwenview
 kate
@@ -37,4 +37,3 @@ spectacle
 systemsettings
 xdg-desktop-portal-kde
 zeroconf-ioslave
-sddm-sugar-dark
