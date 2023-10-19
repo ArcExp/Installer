@@ -89,9 +89,6 @@ subvolumesetup () {
     # Create non-root subvolumes
     createsubvolumes
 
-    # Unmount root to remount with subvolumes
-    umount /mnt
-
     # Make the home subvolume directory and mount it
     mkdir -p /mnt/home
     mountallsubvol
