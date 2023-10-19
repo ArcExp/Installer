@@ -97,7 +97,7 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 
   mkdir -p "/home/$USERNAME/.wallpaper"
   cp "$HOME/Installer/configs/wallpapers/"* "/home/$USERNAME/.wallpaper"
-  chmod -R +x ~/.config/eww/scripts/
+  chmod +x -R "/home/$USERNAME/.config/eww/scripts/"
   shopt -u dotglob
 
   # Set ownership of the home directory
