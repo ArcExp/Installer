@@ -18,7 +18,6 @@ usbutils
 xdg-user-dirs
 firefox
 --END OF MINIMAL INSTALL--
-alsa-plugins
 alsa-utils
 bluez
 bluez-libs
