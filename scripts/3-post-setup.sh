@@ -64,7 +64,7 @@ if [[ "${DESKTOP_ENV}" == "kde" ]]; then
   sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm noisetorch steam-acolyte
   if [[ "${INSTALL_TYPE}" == "FULL" ]]; then
     echo "[Theme]" >> /etc/sddm.conf
-    echo "Current=Nordic" >> /etc/sddm.conf
+    echo "Current=sugar-dark" >> /etc/sddm.conf
   fi
 
 elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
