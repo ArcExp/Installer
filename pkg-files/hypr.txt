@@ -47,4 +47,5 @@ socat
 ttf-jetbrains-mono
 ttf-nerd-fonts-symbols
 papirus-icon-theme
+wofi
 --END OF MINIMAL INSTALL--
