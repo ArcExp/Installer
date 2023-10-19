@@ -143,11 +143,8 @@ fi
   
 echo -ne "
 -------------------------------------------------------------------------
-                    Enabling Essential Services
+                    Enabling Services
 -------------------------------------------------------------------------
-"
-systemctl enable cups.service
-echo "  Cups enabled"
 ntpd -qg
 systemctl enable ntpd.service
 echo "  NTP enabled"
