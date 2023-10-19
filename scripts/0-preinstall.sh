@@ -92,13 +92,8 @@ subvolumesetup () {
     # Unmount root to remount with subvolumes
     umount /mnt
 
-    # Mount the @ subvolume for root
-    mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
-
-    # Make directories home & .snapshots
-    mkdir -p /mnt/{home,.snapshots}
-
-    # Mount subvolumes
+    # Make the home subvolume directory and mount it
+    mkdir -p /mnt/home
     mountallsubvol
 }
 
@@ -121,17 +116,17 @@ elif [[ "${FS}" == "ext4" ]]; then
     mount -t ext4 ${partition3} /mnt
 elif [[ "${FS}" == "luks" ]]; then
     mkfs.vfat -F32 -n "EFIBOOT" ${partition2}
-# enter luks password to cryptsetup and format root partition
+    # Enter luks password to cryptsetup and format the root partition
     echo -n "${LUKS_PASSWORD}" | cryptsetup -y -v luksFormat ${partition3} -
-# open luks container and ROOT will be place holder 
+    # Open the luks container and set ROOT as the placeholder
     echo -n "${LUKS_PASSWORD}" | cryptsetup open ${partition3} ROOT -
-# now format that container
-    mkfs.btrfs -L ROOT ${partition3}
-# create subvolumes for btrfs
-    mount -t btrfs ${partition3} /mnt
+    # Now format that container
+    mkfs.btrfs -L ROOT /dev/mapper/ROOT
+    # Create subvolumes for Btrfs
+    mount -t btrfs /dev/mapper/ROOT /mnt
     subvolumesetup
-# store uuid of encrypted partition for grub
-    echo ENCRYPTED_PARTITION_UUID=$(blkid -s UUID -o value ${partition3}) >> $CONFIGS_DIR/setup.conf
+    # Store the UUID of the encrypted partition for grub
+    echo "ENCRYPTED_PARTITION_UUID=$(blkid -s UUID -o value ${partition3})" >> $CONFIGS_DIR/setup.conf
 fi
 
 # mount target
