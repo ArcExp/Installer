@@ -1,4 +1,4 @@
-hyprland-git
+hyprland
 xdg-desktop-portal-hyprland
 xorg-xwayland
 qt5-wayland
