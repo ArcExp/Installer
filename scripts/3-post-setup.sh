@@ -62,10 +62,9 @@ echo -ne "
 if [[ "${DESKTOP_ENV}" == "kde" ]]; then
   systemctl enable sddm.service
   sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm noisetorch steam-acolyte
-  if [[ "${INSTALL_TYPE}" == "FULL" ]]; then
-    echo "[Theme]" >> /etc/sddm.conf
-    echo "Current=sugar-dark" >> /etc/sddm.conf
-  fi
+  echo "[Theme]" >> /etc/sddm.conf
+  echo "Current=sugar-dark" >> /etc/sddm.conf
+fi
 
 elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
