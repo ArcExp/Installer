@@ -75,6 +75,7 @@ echo -ne "
 # @description Creates the Btrfs subvolumes.
 createsubvolumes () {
     btrfs subvolume create /mnt/@
+    mkdir -p /mnt/home
     btrfs subvolume create /mnt/@home
 }
 
@@ -86,11 +87,10 @@ mountallsubvol () {
 
 # @description BTRFS subvolume creation and mounting.
 subvolumesetup () {
-    # Create non-root subvolumes
+    # Create non-root subvolume
     createsubvolumes
 
-    # Make the home subvolume directory and mount it
-    mkdir -p /mnt/home
+    # Mount both subvolumes
     mountallsubvol
 }
 
