@@ -38,5 +38,3 @@ qemu
 terminus-font
 unrar
 unzip
-virt-manager
-virt-viewer
