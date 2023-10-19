@@ -46,11 +46,15 @@ if [[ ! $AUR_HELPER == none ]]; then
       continue
     fi
     echo "INSTALLING: ${line}"
-    $AUR_HELPER -S --noconfirm --needed ${line}
+   $AUR_HELPER -S --noconfirm --needed ${line}
   done
 fi
 
 export PATH=$PATH:~/.local/bin
+
+if [[ $DESKTOP_ENV == "hypr" ]]; then
+  $AUR_HELPER -S --noconfirm --needed rustup cargo
+fi
 
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "FULL" ]]; then
