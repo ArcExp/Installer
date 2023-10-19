@@ -52,10 +52,6 @@ fi
 
 export PATH=$PATH:~/.local/bin
 
-if [[ $DESKTOP_ENV == "hypr" ]]; then
-  $AUR_HELPER -S --noconfirm --needed rustup cargo
-fi
-
 # Theming DE if user chose FULL installation
 if [[ $INSTALL_TYPE == "FULL" ]]; then
   if [[ $DESKTOP_ENV == "kde" ]]; then
