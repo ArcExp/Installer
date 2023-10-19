@@ -38,3 +38,4 @@ qemu
 terminus-font
 unrar
 unzip
+firefox
