@@ -68,6 +68,7 @@ fi
 
 elif [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
+fi
 
 elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   systemctl enable sddm.service
