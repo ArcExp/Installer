@@ -50,4 +50,5 @@ papirus-icon-theme
 wofi
 gvfs
 udiskie
+sddm-sugar-dark
 --END OF MINIMAL INSTALL--
