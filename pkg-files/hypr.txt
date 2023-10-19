@@ -35,7 +35,6 @@ kitty
 sddm
 thunar
 thunar-archive-plugin
-alacritty-git
 file-roller
 xdg-user-dirs
 wf-recorder
