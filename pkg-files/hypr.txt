@@ -13,6 +13,7 @@ pipewire
 wireplumber
 pipewire-pulse
 pipewire-jack
+lib32-pipewire-jack
 pavucontrol
 ripgrep
 playerctl
