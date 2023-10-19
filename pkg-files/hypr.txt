@@ -30,7 +30,7 @@ pamixer
 cliphist
 grimblast-git
 gnome-control-center
-alacritty-git
+kitty
 sddm
 thunar
 thunar-archive-plugin
