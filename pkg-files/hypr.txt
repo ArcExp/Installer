@@ -53,4 +53,5 @@ wofi
 gvfs
 udiskie
 sddm-sugar-dark
+nwg-look-bin
 --END OF MINIMAL INSTALL--
