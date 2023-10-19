@@ -10,11 +10,10 @@ qt6ct
 libva
 linux-headers 
 pipewire
-pipewire-alsa
+wireplumber
 pipewire-pulse
 pipewire-jack
 pavucontrol
-wireplumber
 ripgrep
 playerctl
 gradience-git
