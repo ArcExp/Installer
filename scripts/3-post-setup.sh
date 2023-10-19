@@ -75,6 +75,9 @@ elif [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   systemctl enable pipewire.service pipewire.socket pipewire-pulse.service wireplumber.service
   LC_ALL=C xdg-user-dirs-update --force
 
+  echo "[Theme]" >> /etc/sddm.conf
+  echo "Current=sugar-dark" >> /etc/sddm.conf
+  
   gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
   gsettings set org.gnome.desktop.interface icon-theme Papirus
   gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
