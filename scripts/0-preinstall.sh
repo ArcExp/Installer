@@ -156,6 +156,7 @@ echo "
   Generated /etc/fstab:
 "
 cat /mnt/etc/fstab
+sleep 10
 echo -ne "
 -------------------------------------------------------------------------
                     GRUB BIOS Bootloader Install & Check
