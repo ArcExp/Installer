@@ -84,14 +84,15 @@ createsubvolumes () {
 
 # @description Mount Btrfs subvolume after root has been mounted.
 mountallsubvol () {
-    cd
+    cd /
     umount /mnt
     mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
     mkdir -p /mnt/{boot,home,.snapshots,var/log,swap}
     mount -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
     mount -o ${MOUNT_OPTIONS},subvol=@snapshots ${partition3} /mnt/.snapshots
-    mount -o ${MOUNT_OPTIONS},subvol=@var_log ${partition3} /mnt/var/log}
+    mount -o ${MOUNT_OPTIONS},subvol=@var_log ${partition3} /mnt/var/log
     mount -o ${MOUNT_OPTIONS},subvol=@swap ${partition3} /mnt/swap
+}
 
 # @description BTRFS subvolume creation and mounting.
 subvolumesetup () {
