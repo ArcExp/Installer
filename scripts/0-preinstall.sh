@@ -78,11 +78,6 @@ createsubvolumes () {
     btrfs subvolume create /mnt/@home
 }
 
-# @description Mount all btrfs subvolumes after root has been mounted.
-mountallsubvol () {
-    mount -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
-}
-
 # @description BTRFS subvolulme creation and mounting. 
 subvolumesetup () {
 # create nonroot subvolume
@@ -92,8 +87,7 @@ subvolumesetup () {
 # mount @ subvolume and create home directory
     mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
     mkdir -p /mnt/{home}
-# mount subvolumes
-    mountallsubvol
+    mount -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
 }
 
 if [[ "${DISK}" =~ "nvme" ]]; then
