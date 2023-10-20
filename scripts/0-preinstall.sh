@@ -72,28 +72,27 @@ echo -ne "
                     Creating Filesystems
 -------------------------------------------------------------------------
 "
-# @description Creates the Btrfs subvolumes.
+# @description Creates the btrfs subvolumes. 
 createsubvolumes () {
-    cd /mnt
-    btrfs subvolume create @
-    btrfs subvolume create @home
+    btrfs subvolume create /mnt/@
+    btrfs subvolume create /mnt/@home
 }
 
+# @description Mount all btrfs subvolumes after root has been mounted.
 mountallsubvol () {
-    cd /
-    umount /mnt
-    mount -o ${MOUNT_OPTIONS},subvol=/ ${partition3} /mnt
-
-    mkdir -p /mnt/home
-    mount -o ${MOUNT_OPTIONS},subvol=/home ${partition3} /mnt/home
+    mount -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
 }
 
-# @description BTRFS subvolume creation and mounting.
+# @description BTRFS subvolulme creation and mounting. 
 subvolumesetup () {
-    # Create non-root subvolume
-    createsubvolumes
-
-    # Mount both subvolumes
+# create nonroot subvolume
+    createsubvolumes     
+# unmount root to remount with subvolume 
+    umount /mnt
+# mount @ subvolume and create home directory
+    mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
+    mkdir -p /mnt/{home}
+# mount subvolumes
     mountallsubvol
 }
 
