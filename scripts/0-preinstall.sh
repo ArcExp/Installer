@@ -79,14 +79,13 @@ createsubvolumes () {
     btrfs subvolume create @home
 }
 
-# @description Mount Btrfs subvolume after root has been mounted.
 mountallsubvol () {
     cd /
     umount /mnt
-    mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
-    
+    mount -o ${MOUNT_OPTIONS},subvol=/ ${partition3} /mnt
+
     mkdir -p /mnt/home
-    mount -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
+    mount -o ${MOUNT_OPTIONS},subvol=/home ${partition3} /mnt/home
 }
 
 # @description BTRFS subvolume creation and mounting.
