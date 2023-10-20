@@ -92,8 +92,6 @@ umount /mnt
 
 mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
 
-Now you need to mkdir /mnt/home and (/root /srv /var/cache, log and tmp)
-
 mkdir -p /mnt/home
 mkdir -p /mnt/root
 mkdir -p /mnt/srv
