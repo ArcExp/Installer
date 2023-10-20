@@ -74,8 +74,11 @@ echo -ne "
 "
 # @description Creates the btrfs subvolumes. 
 createsubvolumes () {
-    btrfs subvolume create /mnt/@
-    btrfs subvolume create /mnt/@home
+    btrfs subvolume create /mnt/root
+    btrfs subvolume set-default /mnt/root
+    mkdir -p /mnt//home
+    btrfs subvolume create /mnt/home
+    btrfs subvolume set-default /mnt/home
 }
 
 # @description BTRFS subvolulme creation and mounting. 
@@ -85,7 +88,6 @@ subvolumesetup () {
 # unmount root to remount with subvolumes
     umount /mnt
     mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
-    mkdir -p /mnt/{home}
     mount -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
 }
 
