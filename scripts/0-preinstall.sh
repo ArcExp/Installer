@@ -82,9 +82,8 @@ createsubvolumes () {
 subvolumesetup () {
 # create nonroot subvolume
     createsubvolumes     
-# unmount root to remount with subvolume 
+# unmount root to remount with subvolumes
     umount /mnt
-# mount @ subvolume and create home directory
     mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
     mkdir -p /mnt/{home}
     mount -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
