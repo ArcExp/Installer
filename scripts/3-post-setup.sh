@@ -157,7 +157,7 @@ echo "  Avahi enabled"
 
 echo -ne "
 -------------------------------------------------------------------------
-               Enabling (and Theming) Plymouth Boot Splash
+               Enabling and Theming Plymouth Boot Splash
 -------------------------------------------------------------------------
 "
 if [[ "${DESKTOP_ENV}" != "server" ]]; then
