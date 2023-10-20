@@ -89,9 +89,9 @@ mountallsubvol () {
     mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
     mkdir -p /mnt/{boot,home,.snapshots,var/log,swap}
     mount -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
-${MOUNT_OPTIONS},subvol=@snapshots ${partition3} /mnt/.snapshots
-${MOUNT_OPTIONS},subvol=@var_log ${partition3} /mnt/var/log}
-${MOUNT_OPTIONS},subvol=@swap ${partition3} /mnt/swap
+    mount -o ${MOUNT_OPTIONS},subvol=@snapshots ${partition3} /mnt/.snapshots
+    mount -o ${MOUNT_OPTIONS},subvol=@var_log ${partition3} /mnt/var/log}
+    mount -o ${MOUNT_OPTIONS},subvol=@swap ${partition3} /mnt/swap
 
 # @description BTRFS subvolume creation and mounting.
 subvolumesetup () {
