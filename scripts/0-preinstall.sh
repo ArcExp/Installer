@@ -74,11 +74,11 @@ echo -ne "
 "
 # @description Creates the btrfs subvolumes. 
 createsubvolumes () {
+    btrfs subvolume create @
     btrfs subvolume create /mnt/@
     btrfs subvolume set-default /mnt/@
     mkdir -p /mnt/home
     btrfs subvolume create /mnt/@home
-    btrfs subvolume set-default /mnt/@home
 }
 
 # @description BTRFS subvolulme creation and mounting. 
