@@ -5,3 +5,4 @@ plymouth-git
 ttf-meslo
 vde2
 ttf-ms-fonts
+snapper-gui-git
