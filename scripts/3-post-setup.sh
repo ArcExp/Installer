@@ -140,6 +140,24 @@ if [[ "${DESKTOP_ENV}" == "kde" || "${DESKTOP_ENV}" == "gnome" || "${DESKTOP_ENV
     sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm timeshift-bin timeshift-autosnap grub-btrfs
   fi
 fi
+
+
+if [[ "${FS}" == "luks" || "${FS}" == "btrfs" ]]; then
+echo -ne "
+-------------------------------------------------------------------------
+                    Creating Snapper Config
+-------------------------------------------------------------------------
+"
+
+SNAPPER_CONF="$HOME/Installer/configs/etc/snapper/configs/root"
+mkdir -p /etc/snapper/configs/
+cp -rfv ${SNAPPER_CONF} /etc/snapper/configs/
+
+SNAPPER_CONF_D="$HOME/Installer/configs/etc/conf.d/snapper"
+mkdir -p /etc/conf.d/
+cp -rfv ${SNAPPER_CONF_D} /etc/conf.d/
+
+fi
   
 echo -ne "
 -------------------------------------------------------------------------
