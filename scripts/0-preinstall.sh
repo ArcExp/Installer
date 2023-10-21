@@ -76,35 +76,31 @@ echo -ne "
 createsubvolumes () {
     btrfs subvolume create /mnt/@
     btrfs subvolume create /mnt/@home
-    btrfs subvolume create /mnt/@root
-    btrfs subvolume create /mnt/@srv
-    btrfs subvolume create /mnt/@cache
+    btrfs subvolume create /mnt/@var
     btrfs subvolume create /mnt/@tmp
-    btrfs subvolume create /mnt/@log
+    btrfs subvolume create /mnt/@.snapshots
+}
+
+# @description Mount all btrfs subvolumes after root has been mounted.
+mountallsubvol () {
+    mount -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
+    mount -o ${MOUNT_OPTIONS},subvol=@tmp ${partition3} /mnt/tmp
+    mount -o ${MOUNT_OPTIONS},subvol=@var ${partition3} /mnt/var
+    mount -o ${MOUNT_OPTIONS},subvol=@.snapshots ${partition3} /mnt/.snapshots
 }
 
 # @description BTRFS subvolulme creation and mounting. 
 subvolumesetup () {
-# create subvolume layout
-createsubvolumes     
-# unmount root to remount with subvolumes
-umount /mnt
-
-mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
-
-mkdir -p /mnt/home
-mkdir -p /mnt/root
-mkdir -p /mnt/srv
-mkdir -p /mnt/var/cache
-mkdir -p /mnt/var/tmp
-mkdir -p /mnt/var/log
-
-mount -o ${MOUNT_OPTIONS},subvol=@home ${partition3} /mnt/home
-mount -o ${MOUNT_OPTIONS},subvol=@root ${partition3} /mnt/root
-mount -o ${MOUNT_OPTIONS},subvol=@srv  ${partition3} /mnt/srv
-mount -o ${MOUNT_OPTIONS},subvol=@cache ${partition3} /mnt/var/cache
-mount -o ${MOUNT_OPTIONS},subvol=@tmp  ${partition3} /mnt/var/tmp
-mount -o ${MOUNT_OPTIONS},subvol=@log  ${partition3} /mnt/var/log
+# create nonroot subvolumes
+    createsubvolumes     
+# unmount root to remount with subvolume 
+    umount /mnt
+# mount @ subvolume
+    mount -o ${MOUNT_OPTIONS},subvol=@ ${partition3} /mnt
+# make directories home, .snapshots, var, tmp
+    mkdir -p /mnt/{home,var,tmp,.snapshots}
+# mount subvolumes
+    mountallsubvol
 }
 
 if [[ "${DISK}" =~ "nvme" ]]; then
