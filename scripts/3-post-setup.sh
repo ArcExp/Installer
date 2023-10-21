@@ -134,14 +134,6 @@ else
   fi
 fi
 
-if [[ "${DESKTOP_ENV}" == "kde" || "${DESKTOP_ENV}" == "gnome" || "${DESKTOP_ENV}" == "hypr" || "${DESKTOP_ENV}" == "server" ]]; then
-  if [[ "${FS}" == "btrfs" ]]; then
-    echo -ne "Installing Timeshift-Autosnap\n"
-    sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm timeshift-bin timeshift-autosnap grub-btrfs
-  fi
-fi
-
-
 if [[ "${FS}" == "luks" || "${FS}" == "btrfs" ]]; then
 echo -ne "
 -------------------------------------------------------------------------
