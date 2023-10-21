@@ -52,4 +52,5 @@ gvfs
 udiskie
 sddm-sugar-dark
 nwg-look-bin
+wlsunset
 --END OF MINIMAL INSTALL--
