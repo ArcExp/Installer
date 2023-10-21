@@ -6,3 +6,6 @@ ttf-meslo
 vde2
 ttf-ms-fonts
 snapper-gui-git
+ffmpeg
+mpv
+yt-dlp
