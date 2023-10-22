@@ -1,5 +1,4 @@
 rustup
-eww-tray-wayland-git
 hyprland-git
 xdg-desktop-portal-hyprland
 xorg-xwayland
@@ -7,16 +6,12 @@ qt5-wayland
 qt6-wayland
 qt5ct
 qt6ct
-libva
-linux-headers 
 pipewire
 wireplumber
 pipewire-pulse
 pipewire-jack
 lib32-pipewire-jack
 pavucontrol
-ripgrep
-playerctl
 gradience-git
 adw-gtk3-git
 jq
@@ -25,11 +20,7 @@ gedit
 eog
 hyprpaper
 hyprshot
-swww
-gtklock
-pamixer
 cliphist
-gnome-control-center
 kitty
 sddm
 thunar
@@ -42,8 +33,6 @@ python-gobject
 python-requests
 python-jinja
 python-material-color-utilities
-zenity
-socat
 ttf-jetbrains-mono
 ttf-nerd-fonts-symbols
 papirus-icon-theme
