@@ -33,4 +33,5 @@ udiskie
 sddm-sugar-dark
 nwg-look-bin
 wlsunset
+neofetch
 --END OF MINIMAL INSTALL--
