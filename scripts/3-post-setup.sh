@@ -77,10 +77,6 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 
   echo "[Theme]" >> /etc/sddm.conf
   echo "Current=sugar-dark" >> /etc/sddm.conf
-  
-  gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3
-  gsettings set org.gnome.desktop.interface icon-theme Papirus
-  gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Regular 11"
 
   mkdir -p "/home/$USERNAME/Desktop" \
     "/home/$USERNAME/Documents" \
@@ -93,11 +89,9 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 
   shopt -s dotglob
   cp -R "$HOME/Installer/configs/hyprland-dots/.config" "/home/$USERNAME/"
-  cp -R "$HOME/Installer/configs/hyprland-dots/.icons" "/home/$USERNAME/"
 
   mkdir -p "/home/$USERNAME/.wallpaper"
   cp "$HOME/Installer/configs/wallpapers/"* "/home/$USERNAME/.wallpaper"
-  chmod +x -R "/home/$USERNAME/.config/eww/scripts/"
   shopt -u dotglob
 
   # Set ownership of the home directory
