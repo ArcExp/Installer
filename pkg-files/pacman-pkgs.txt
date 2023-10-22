@@ -1,20 +1,9 @@
 mesa
-xorg
-xorg-server
-xorg-apps
-xorg-drivers
-xorg-xkill
-xorg-xinit
+base
 base-devel
-libx11
-libxft
-libxinerama
-freetype2
-binutils
-dosfstools
+linux
 linux-headers
-noto-fonts-emoji
-usbutils
+linux-firmware
 xdg-user-dirs
 firefox
 --END OF MINIMAL INSTALL--
@@ -26,7 +15,6 @@ bridge-utils
 btrfs-progs
 efibootmgr
 egl-wayland
-gcc
 gparted
 gptfdisk
 neofetch
