@@ -14,7 +14,6 @@ lib32-pipewire-jack
 pavucontrol
 gradience-git
 adw-gtk3-git
-jq
 polkit-gnome
 gedit
 eog
@@ -27,14 +26,6 @@ thunar
 thunar-archive-plugin
 file-roller
 xdg-user-dirs
-wf-recorder
-dbus-python
-python-gobject
-python-requests
-python-jinja
-python-material-color-utilities
-ttf-jetbrains-mono
-ttf-nerd-fonts-symbols
 papirus-icon-theme
 wofi
 gvfs
