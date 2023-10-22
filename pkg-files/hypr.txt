@@ -9,8 +9,6 @@ qt6ct
 pipewire
 wireplumber
 pipewire-pulse
-pipewire-jack
-lib32-pipewire-jack
 pavucontrol
 gradience-git
 adw-gtk3-git
