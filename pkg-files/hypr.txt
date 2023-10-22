@@ -36,4 +36,7 @@ breeze
 mako
 ranger
 swaylock-effects
+ffmpeg
+mpv
+yt-dlp
 --END OF MINIMAL INSTALL--
