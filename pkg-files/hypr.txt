@@ -34,4 +34,5 @@ sddm-sugar-dark
 nwg-look-bin
 wlsunset
 neofetch
+breeze
 --END OF MINIMAL INSTALL--
