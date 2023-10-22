@@ -33,10 +33,7 @@ nwg-look-bin
 wlsunset
 neofetch
 breeze
-dunst
 mako
-rofi
-waybar
 ranger
-ttf-jetbrains-mono
+swaylock-effects
 --END OF MINIMAL INSTALL--
