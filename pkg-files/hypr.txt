@@ -33,4 +33,5 @@ nwg-look-bin
 wlsunset
 neofetch
 breeze
+dunst
 --END OF MINIMAL INSTALL--
