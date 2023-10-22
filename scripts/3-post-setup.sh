@@ -88,7 +88,7 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
     "/home/$USERNAME/Videos"
 
   shopt -s dotglob
-  cp -R "$HOME/Installer/configs/hyprland-dots/.config" "/home/$USERNAME/"
+  cp -R "$HOME/Installer/configs/.config" "/home/$USERNAME/"
 
   mkdir -p "/home/$USERNAME/.wallpaper"
   cp "$HOME/Installer/configs/wallpapers/"* "/home/$USERNAME/.wallpaper"
