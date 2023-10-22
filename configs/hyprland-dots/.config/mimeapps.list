@@ -1,9 +1,0 @@
-[Default Applications]
-text/x-csrc=org.gnome.gedit.desktop
-application/json=org.gnome.gedit.desktop
-application/x-shellscript=org.gnome.gedit.desktop
-
-[Added Associations]
-text/x-csrc=org.gnome.gedit.desktop;
-application/json=org.gnome.gedit.desktop;
-application/x-shellscript=org.gnome.gedit.desktop;
