@@ -34,4 +34,9 @@ wlsunset
 neofetch
 breeze
 dunst
+mako
+rofi
+waybar
+ranger
+ttf-jetbrains-mono
 --END OF MINIMAL INSTALL--
