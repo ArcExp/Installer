@@ -5,6 +5,8 @@ linux
 linux-headers
 linux-firmware
 xdg-user-dirs
+pipewire
+pipewire-jack
 firefox
 --END OF MINIMAL INSTALL--
 alsa-utils
