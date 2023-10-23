@@ -1,4 +1,4 @@
-hyprland-git
+hyprland
 xdg-desktop-portal-hyprland
 xorg-xwayland
 qt5-wayland
@@ -10,7 +10,7 @@ wireplumber
 pipewire-pulse
 pavucontrol
 gradience-git
-adw-gtk3-git
+adw-gtk3
 polkit-gnome
 gedit
 eog
