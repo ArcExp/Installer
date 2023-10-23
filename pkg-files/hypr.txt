@@ -19,8 +19,8 @@ hyprshot
 cliphist
 kitty
 sddm
-nautilus
 libadwaita-without-adwaita-git
+nautilus
 file-roller
 xdg-user-dirs
 papirus-icon-theme
