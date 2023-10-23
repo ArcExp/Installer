@@ -22,7 +22,6 @@ sddm
 thunar
 thunar-archive-plugin
 thunar-volman
-gvfs
 file-roller
 xdg-user-dirs
 papirus-icon-theme
