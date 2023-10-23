@@ -1,4 +1,3 @@
-rustup
 hyprland-git
 xdg-desktop-portal-hyprland
 xorg-xwayland
@@ -20,8 +19,8 @@ hyprshot
 cliphist
 kitty
 sddm
-thunar
-thunar-archive-plugin
+nautilus
+libadwaita-without-adwaita-git
 file-roller
 xdg-user-dirs
 papirus-icon-theme
