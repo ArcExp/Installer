@@ -19,13 +19,14 @@ hyprshot
 cliphist
 kitty
 sddm
-libadwaita-without-adwaita-git
-nautilus
+thunar
+thunar-archive-plugin
+thunar-volman
+gvfs
 file-roller
 xdg-user-dirs
 papirus-icon-theme
 wofi
-gvfs
 udiskie
 sddm-sugar-dark
 nwg-look-bin
