@@ -1,0 +1,18 @@
+// Clock Styling
+
+*{
+    all: unset;
+  }
+  
+  window {
+    color: $000000;
+  
+    & > * {
+      margin: 3px;
+    }
+  }
+
+  .timer{
+    font-size: xx-large;
+    font-weight: bold;
+  }

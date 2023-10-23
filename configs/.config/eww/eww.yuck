@@ -1,0 +1,30 @@
+(defwindow time
+  :monitor 0
+  :namespace gtk-layer-shell
+  :geometry (geometry :x "5%"
+                      :y "5%"
+                      :width "10%"
+                      :height "10%"
+                      :anchor "top right")
+  :stacking "bg"
+  :wm-ignore true
+  (box :class "timer"
+  :orientation "v"
+  :space-evenly false
+  :spacing 0
+  (box :class "hour"
+  :orientation "v"
+  :space-evenly false
+  hour mins)
+  (box :class "date"
+  :orientation "v"
+  :space-evenly false
+  :spacing "0"
+  dateA dateB)
+  )
+  )
+
+  (defpoll hour :interval "1s" "date +%I")
+  (defpoll mins :interval "1s" "date +%M")
+  (defpoll dateA :interval "1s" "date +%y-%b")
+  (defpoll dateB :interval "1s" "date +%A")
