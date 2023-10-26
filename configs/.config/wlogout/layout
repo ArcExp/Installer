@@ -23,3 +23,8 @@
     "action" : "systemctl suspend",
     "text" : "Suspend",
 }
+{
+    "label" : "cancel",
+    "action" : "",
+    "text" : "Cancel",
+}

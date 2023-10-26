@@ -16,11 +16,11 @@ button {
 }
 
 button:hover {
-    background-color: rgba(49, 50, 68, 0.1);
+    background-color: rgba(208, 254, 254, 0.1);
 }
 
 button:focus {
-    background-color: #cba6f7;
+    background-color: #d0fefe;
     color: #1e1e2e;
 }
 
@@ -57,4 +57,11 @@ button:focus {
 }
 #reboot:focus {
     background-image: image(url("./restart-hover.png"));
+}
+
+#cancel {
+    background-image: image(url("./cancel.png"));
+}
+#cancel:focus {
+    background-image: image(url("./cancel.png"));
 }
