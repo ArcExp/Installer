@@ -1,0 +1,76 @@
+{
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        },
+        "on-click": "activate",
+        "sort-by-number": true,
+        "active-only": true
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "<span foreground=\"#A7C080\">{icon}</span> {percent}% ",
+        "format-icons": [
+            "",
+            ""
+        ],
+        "on-click": "pkill -USR1 gammastep || gammastep",
+        "tooltip-format": "Brightness"
+    },
+    "pulseaudio": {
+        "format": "<span foreground=\"#3D484D\">|</span> <span foreground=\"#A7C080\">{icon}</span> {volume}% ",
+        "format-bluetooth": "<span foreground=\"#A7C080\">{icon}</span> {volume}%",
+        "format-muted": "<span foreground=\"#A7C080\"></span>",
+        "format-icons": {
+            "headphone": "",
+            "default": [
+                "",
+                ""
+            ]
+        },
+        "scroll-step": 1,
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
+    },
+    "keyboard-state": {
+        "capslock": true,
+        "format": {
+            "capslock": "<span foreground=\"#3D484D\">|</span> <span foreground=\"#A7C080\">󰪛</span> {icon}"
+        },
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "disk": {
+        "interval": 30,
+        "format": "<span foreground=\"#A7C080\" weight=\"bold\">/</span> {percentage_used}% ",
+        "path": "/"
+    },
+    "cpu": {
+        "format": "<span foreground=\"#3D484D\">|</span> <span foreground=\"#A7C080\" weight=\"bold\">CPU</span> {usage}% "
+    },
+    "memory": {
+        "format": "<span foreground=\"#3D484D\">|</span> <span foreground=\"#A7C080\" weight=\"bold\">RAM</span> {}% "
+    },
+    "custom/wlogout": {
+        "format": "⏻",
+        "on-click": "wlogout",
+        "tooltip": false
+    }
+}

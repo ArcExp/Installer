@@ -1,0 +1,46 @@
+//
+// ██╗    ██╗ █████╗ ██╗   ██╗██████╗  █████╗ ██████╗ 
+// ██║    ██║██╔══██╗╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+// ██║ █╗ ██║███████║ ╚████╔╝ ██████╔╝███████║██████╔╝
+// ██║███╗██║██╔══██║  ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+// ╚███╔███╔╝██║  ██║   ██║   ██████╔╝██║  ██║██║  ██║
+//  ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+//
+// Waybar Config File by Arfan Zubi
+
+{
+    "layer": "top",
+    "height": 40,
+
+    // Load modules
+    "include": ["~/.config/waybar/modules.json"],
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock", "seperator"],
+    "modules-right": ["group/hardware"],
+
+    "group/system": {
+        "orientation": "horizontal",
+        "modules": [
+            "backlight",
+            "pulseaudio",
+        ]
+    },
+
+    "group/keyboard": {
+        "orientation": "horizontal",
+        "modules": [
+            "hyprland/language",
+            "keyboard-state"
+        ]
+    },
+
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "disk",
+            "cpu",
+            "memory"
+        ]
+    }
+}
