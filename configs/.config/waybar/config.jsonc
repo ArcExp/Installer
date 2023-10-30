@@ -1,0 +1,42 @@
+{
+    "position": "top",
+    "layer": "top",
+    "height": 38,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-right": ["tray", "clock"],
+    
+    // Module definitions:
+    
+	"clock": {
+		"format": " {:%H:%M}",
+		"tooltip": "true",
+        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        	"format-alt": " {:%d/%m}"
+	},
+	
+	"hyprland/workspaces": {
+        "active-only": true,
+        "all-outputs": true,
+		"format": "{icon}",
+		"format-icons": {
+			// "1": "1",
+			// "2": "2",
+			// "3": "3",
+			// "4": "4",
+			// "5": "5",
+			"urgent": "",
+			"active": "",
+			"default": "󰧞",
+    "sort-by-number": true
+    },
+
+	"tray": {
+		"icon-size": 16,
+		"spacing": 5
+	},
+}
+}
