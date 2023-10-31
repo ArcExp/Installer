@@ -13,11 +13,11 @@
       ],
       
     "modules-right": [
+      "cpu",
+      "memory",
+      "pulseaudio",
       "network",
       "temperature",
-      "memory",
-      "cpu",
-      "pulseaudio",
       "custom/powermenu",
     ],
     
@@ -38,11 +38,7 @@
       },
       "separate-outputs": false
     },
-    "hyprland/submap": {
-      "format": "✌️ {}",
-      "max-length": 8,
-      "tooltip": true
-    },
+
     "hyprland/workspaces": {
       "format": "{icon}",
       "format-icons": {
@@ -76,20 +72,20 @@
       "format-icons": ["", "", ""]
     },
     
-    "memory": {
-      "format": "󰍛 {}%",
+    "cpu": {
+      "format": "󰍛 {usage}%",
       "tooltip": "false"
     },
     
-    "cpu": {
-      "format": " {usage}%",
-      "tooltip": "false"
+    "memory": {
+     "format": " {}%",
+     "tooltip": "false"
     },
     
     "custom/powermenu": {
       "format": "",
       "tooltip": false,
-      "on-click": "exec wlogout -p layer-shell",
+      "on-click": "exec wlogout",
     },
     
     "custom/updates": {
@@ -100,8 +96,8 @@
     },
     
     "pulseaudio": {
-      "format": "{volume}% {icon}",
-      "format-bluetooth": "{volume}% {icon}",
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "{icon} {volume}%",
       "format-muted": "󰸈",
       "format-icons": {
           "headphone": "󰋋",
@@ -119,9 +115,9 @@
     
 	"clock": {
         "tooltip-format": "{:%A %B %d %Y | %H:%M}",
-        "format": " {:%a %d %b %H:%M}", //24 hour format
-        "format-alt": " {:%d/%m/%Y}",
-        // "format": " {:%a %d %b %I:%M %p}", //12 hour format
+        "format": "  {:%a %d %b %H:%M}", //24 hour format
+        "format-alt": "  {:%d/%m/%Y}",
+        // "format": "  {:%a %d %b %I:%M %p}", //12 hour format
         "interval": 1
         },
   }
