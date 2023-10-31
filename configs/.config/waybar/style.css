@@ -1,68 +1,90 @@
 * {
-    border: none;
-    border-radius: 0px;
-    font-size: 14px;
-    font-style: normal;
-    min-height: 0;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
 }
-
-window#waybar {
-    background: rgba(30, 30, 46, 0.5);
-    color: #f4d9e1
-}
-
-#workspaces {
-	background: #282828;
-	margin: 5px 5px 5px 5px;
-  padding: 0px 5px 0px 5px;
-	border-radius: 16px;
-  border: solid 0px #f4d9e1;
-  font-weight: normal;
-  font-style: normal;
+#waybar {
+background: rgba(30, 30, 46, 0.5);
+    color: #f4d9e1;
+  font-size: 14px;
+  font-family: "Hack Nerd Font";
 }
 
 #workspaces button {
-    padding: 0px 5px;
-    border-radius: 16px;
-    color: #928374;
+  padding: 0 5px;
+  color: #eeeeef;
 }
-
+/* Fix: active workspace doesn't show up */
+/* #workspaces button.focused { */
 #workspaces button.active {
-    color: whitesmoke;
-    background-color: transparent;
-    border-radius: 16px;
+  color: #fa5aa4;
 }
 
-#workspaces button:hover {
-	background-color: #E6B9C6;
-	color: black;
-	border-radius: 16px;
+#custom-powermenu,
+#cpu,
+#temperature,
+#memory,
+#workspaces,
+#clock,
+#window,
+#pulseaudio,
+#custom-updates,
+#network {
+  padding: 4px 8px;
+  background-color: #303643;
+  border-radius: 30px;
+  margin: 6px 4px;
 }
 
-#custom-date, #clock, #custom-randwall {
-	background: transparent;
-	padding: 5px 5px 5px 5px;
-	margin: 5px 5px 5px 5px;
-  border-radius: 8px;
-  border: solid 0px #f4d9e1;
+#window {
+  color: #929db1;
 }
 
 #tray {
-    background: #282828;
-    margin: 5px 5px 5px 5px;
-    border-radius: 16px;
-    padding: 0px 5px;
+  margin-left: 4px;
+}
+
+#custom-updates {
+  color: #1788e4;
+}
+
+#custom-powermenu {
+  color: #e06c75;
+  padding-right: 11px;
+  margin-right: 8px;
+}
+
+#scratchpad {
+  color: #cffafe;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+#pulseaudio {
+  color: #0fb9b1;
+  padding-right: 14px;
+}
+
+#cpu {
+  color: #61afef;
+}
+
+#temperature {
+  color: #98c379;
+}
+
+#memory {
+  color: #e5c07b;
+}
+
+#network {
+  color: #c678dd;
+  min-width: 200px;
 }
 
 #clock {
-    color: white;
-    background-color: #282828;
-    border-radius: 0px 0px 0px 24px;
-    padding-left: 13px;
-    padding-right: 15px;
-    margin-right: 0px;
-    margin-left: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: bold;
+  color: #fff;
+  margin-left: 8px;
 }
