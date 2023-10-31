@@ -7,7 +7,7 @@ qt5ct
 qt6ct
 pipewire
 wireplumber
-pipewire-pulse
+pulseaudio
 pavucontrol
 gradience-git
 adw-gtk3
