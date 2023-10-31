@@ -7,30 +7,31 @@
     "margin-left": 0,
     "margin-right": 0,
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["tray", "clock"],
-    
-    // Module definitions:
+    "modules-center": ["clock"],
+    "modules-right": ["tray"],
+    // Modules configuration
     
 	"clock": {
-		"format": " {:%H:%M}",
-		"tooltip": "true",
-        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        	"format-alt": " {:%d/%m}"
-	},
-	
+        "tooltip-format": "{:%A %B %d %Y | %H:%M}",
+        "format": " {:%a %d %b %H:%M}", //24 hour format
+        "format-alt": "  {:%d/%m/%Y}",
+        // "format": "  {:%a %d %b %I:%M %p}", //12 hour format
+        "interval": 1
+        },
+        
 	"hyprland/workspaces": {
         "active-only": true,
         "all-outputs": true,
 		"format": "{icon}",
 		"format-icons": {
-			// "1": "1",
-			// "2": "2",
-			// "3": "3",
-			// "4": "4",
-			// "5": "5",
-			"urgent": "",
-			"active": "",
-			"default": "󰧞",
+		        "1": "1",
+			"2": "2",
+			"3": "3",
+			"4": "4",
+			"5": "5",
+			// "urgent": "",
+			// "active": "",
+			//"default": "󰧞",
     "sort-by-number": true
     },
 
@@ -38,5 +39,13 @@
 		"icon-size": 16,
 		"spacing": 5
 	},
+
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+        	"format-muted": "󰝟",
+		"format-icons": {
+			"default": ["󰕿", "󰖀", "󰕾"]
+		}
+    },
 }
 }

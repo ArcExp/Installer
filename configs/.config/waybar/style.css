@@ -1,8 +1,6 @@
 * {
     border: none;
     border-radius: 0px;
-    /*font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK;*/
-    font-family: Iosevka, FontAwesome, Noto Sans CJK;
     font-size: 14px;
     font-style: normal;
     min-height: 0;
@@ -41,7 +39,7 @@ window#waybar {
 	border-radius: 16px;
 }
 
-#custom-date, #clock, #battery, #pulseaudio, #network, #custom-randwall, #custom-launcher {
+#custom-date, #clock, #custom-randwall {
 	background: transparent;
 	padding: 5px 5px 5px 5px;
 	margin: 5px 5px 5px 5px;
@@ -54,7 +52,6 @@ window#waybar {
     margin: 5px 5px 5px 5px;
     border-radius: 16px;
     padding: 0px 5px;
-    /*border-right: solid 1px #282738;*/
 }
 
 #clock {
@@ -68,32 +65,4 @@ window#waybar {
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: bold;
-    /*border-left: solid 1px #282738;*/
-}
-
-#pulseaudio {
-    color: whitesmoke;
-    border-radius: 8px;
-    margin-left: 0px;
-}
-
-#pulseaudio.muted {
-    background: transparent;
-    color: #928374;
-    border-radius: 8px;
-    margin-left: 0px;
-}
-
-#window {
-    background: #282828;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 16px;
-    /*border-left: solid 1px #282738;*/
-    /*border-right: solid 1px #282738;*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight: normal;
-    font-style: normal;
-}
 }
