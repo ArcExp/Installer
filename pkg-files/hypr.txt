@@ -43,4 +43,5 @@ less
 wlogout
 ttf-maple
 ttf-material-design-icons-extended
+nerd-fonts-noto-sans-mono-extended
 --END OF MINIMAL INSTALL--
