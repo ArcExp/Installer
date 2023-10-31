@@ -41,4 +41,6 @@ mpv
 yt-dlp
 less
 wlogout
+ttf-maple
+ttf-material-design-icons-extended
 --END OF MINIMAL INSTALL--
