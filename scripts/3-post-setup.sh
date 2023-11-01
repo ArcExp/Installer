@@ -92,6 +92,10 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 
   mkdir -p "/home/$USERNAME/.wallpaper"
   cp "$HOME/Installer/configs/wallpapers/"* "/home/$USERNAME/.wallpaper"
+  chmod +x -R "/home/$USERNAME/.config/scripts"
+  chmod +x -R "/home/$USERNAME/.config/waybar/checkupdate.sh"
+  chmod +x -R "/home/$USERNAME/.config/hypr/scripts/"
+  chmod +x "/home/$USERNAME/.config/hypr/xdg-portal-hyprland"
   shopt -u dotglob
 
   # Set ownership of the home directory
