@@ -6,8 +6,11 @@ qt6-wayland
 qt5ct
 qt6ct
 pipewire
+pipewire-pulse
+pipewire-jack
+pipewire-alsa
+pipewire-docs
 wireplumber
-pulseaudio
 pavucontrol
 gradience-git
 adw-gtk3
