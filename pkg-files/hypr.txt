@@ -44,4 +44,5 @@ wlogout
 ttf-maple
 ttf-material-design-icons-extended
 nerd-fonts-noto-sans-mono-extended
+ttf-hack-nerd
 --END OF MINIMAL INSTALL--
