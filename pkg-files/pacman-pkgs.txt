@@ -9,9 +9,7 @@ pipewire
 pipewire-jack
 firefox
 --END OF MINIMAL INSTALL--
-alsa-utils
 bluez
-bluez-libs
 bluez-utils
 bridge-utils
 btrfs-progs
