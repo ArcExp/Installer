@@ -29,18 +29,13 @@ background: rgba(30, 30, 46, 0.5);
 #memory,
 #workspaces,
 #clock,
-#window,
 #pulseaudio,
 #custom-updates,
 #network {
   padding: 4px 8px;
-  background-color: #303643;
+  background-color:  #1e1e2e;
   border-radius: 30px;
   margin: 6px 4px;
-}
-
-#window {
-  color: #929db1;
 }
 
 #tray {
@@ -55,12 +50,6 @@ background: rgba(30, 30, 46, 0.5);
   color: #e06c75;
   padding-right: 11px;
   margin-right: 8px;
-}
-
-#scratchpad {
-  color: #cffafe;
-  padding-right: 4px;
-  padding-left: 4px;
 }
 
 #pulseaudio {
@@ -82,7 +71,7 @@ background: rgba(30, 30, 46, 0.5);
 
 #network {
   color: #c678dd;
-  min-width: 200px;
+  min-width: 190px;
 }
 
 #clock {

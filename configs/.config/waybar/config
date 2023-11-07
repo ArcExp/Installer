@@ -17,7 +17,6 @@
       "memory",
       "pulseaudio",
       "network",
-      "temperature",
       "custom/powermenu",
     ],
     
@@ -63,13 +62,6 @@
       "tooltip-format-ethernet": "{ifname} ",
       "interval": 2,
       "format": " {bandwidthDownBits}  {bandwidthUpBits}",
-    },
-    
-    "temperature": {
-      "format": "{icon} {temperatureC}°C",
-      "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-      "critical-threshold": 80,
-      "format-icons": ["", "", ""]
     },
     
     "cpu": {
