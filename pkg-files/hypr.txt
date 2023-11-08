@@ -23,6 +23,7 @@ hyprpaper
 hyprshot
 cliphist
 kitty
+ttf-jetbrains-mono
 sddm
 thunar
 thunar-archive-plugin
