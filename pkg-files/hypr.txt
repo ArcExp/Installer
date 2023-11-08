@@ -7,8 +7,8 @@ qt5ct
 qt6ct
 waybar
 pipewire
-pipewire-pulse
 pipewire-alsa
+pipewire-pulse
 pipewire-jack
 wireplumber
 pavucontrol
