@@ -5,7 +5,6 @@ linux
 linux-headers
 linux-firmware
 xdg-user-dirs
-firefox
 --END OF MINIMAL INSTALL--
 bluez
 bluez-utils
