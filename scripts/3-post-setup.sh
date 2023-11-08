@@ -88,8 +88,8 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
     "/home/$USERNAME/Videos"
 
   shopt -s dotglob
-  cp -R "$HOME/Installer/configs/.config" "/home/$USERNAME/"
-
+  cp -R "/home/Installer/configs/.config" "/home/$USERNAME/"
+  mv "$HOME/$USERNAME/.config/.gtkrc-2.0.mine" "/home/$USERNAME/"
   mkdir -p "/home/$USERNAME/.wallpaper"
   cp "$HOME/Installer/configs/wallpapers/"* "/home/$USERNAME/.wallpaper"
   chmod +x -R "/home/$USERNAME/.config/scripts"
