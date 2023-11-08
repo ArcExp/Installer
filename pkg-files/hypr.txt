@@ -5,10 +5,10 @@ qt5-wayland
 qt6-wayland
 qt5ct
 qt6ct
+wireplumber
 pipewire
 pipewire-pulse
 pipewire-alsa
-wireplumber
 pavucontrol
 gradience-git
 adw-gtk3
