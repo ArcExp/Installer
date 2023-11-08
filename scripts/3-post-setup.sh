@@ -71,8 +71,10 @@ if [[ "${DESKTOP_ENV}" == "gnome" ]]; then
 fi
 
 if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
-  systemctl enable sddm.service
-  systemctl enable pipewire.service pipewire.socket pipewire-pulse.service wireplumber.service
+  systemctl enable sddm
+  systemctl enable pipewire
+systemctl enable pipewire.socket systemctl enable pipewire-pulse
+systemctl enable wireplumber
   LC_ALL=C xdg-user-dirs-update --force
 
   echo "[Theme]" >> /etc/sddm.conf
@@ -88,8 +90,8 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
     "/home/$USERNAME/Videos"
 
   shopt -s dotglob
-  cp -R "/home/Installer/configs/.config" "/home/$USERNAME/"
-  mv "$HOME/$USERNAME/.config/.gtkrc-2.0.mine" "/home/$USERNAME/"
+  cp -R "$HOME/Installer/configs/.config" "/home/$USERNAME/"
+  mv "/home/$USERNAME/.config/.gtkrc-2.0.mine" "/home/$USERNAME/"
   mkdir -p "/home/$USERNAME/.wallpaper"
   cp "$HOME/Installer/configs/wallpapers/"* "/home/$USERNAME/.wallpaper"
   chmod +x -R "/home/$USERNAME/.config/scripts"
