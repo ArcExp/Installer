@@ -6,10 +6,11 @@ qt6-wayland
 qt5ct
 qt6ct
 waybar
-wireplumber
 pipewire
 pipewire-pulse
 pipewire-alsa
+pipewire-jack
+wireplumber
 pavucontrol
 gradience-git
 adw-gtk3
@@ -44,4 +45,5 @@ yt-dlp
 less
 wlogout
 ttf-hack-nerd
+firefox
 --END OF MINIMAL INSTALL--
