@@ -1,8 +1,9 @@
 gnome
-firefox
 gedit
 bluez
 bluez-utils
 gnome-bluetooth
+pipewire
+firefox
 --END OF MINIMAL INSTALL--
 gnome-extra
