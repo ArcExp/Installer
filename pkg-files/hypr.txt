@@ -1,5 +1,6 @@
 hyprland
 xdg-desktop-portal-hyprland
+xdg-desktop-portal
 xorg-xwayland
 qt5-wayland
 qt6-wayland
