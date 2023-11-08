@@ -5,7 +5,6 @@ linux
 linux-headers
 linux-firmware
 xdg-user-dirs
-pipewire
 firefox
 --END OF MINIMAL INSTALL--
 bluez
