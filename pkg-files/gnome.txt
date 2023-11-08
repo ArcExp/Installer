@@ -4,6 +4,10 @@ bluez
 bluez-utils
 gnome-bluetooth
 pipewire
+pipewire-jack
+pipewire-alsa
+pipewire-pulse
+wireplumber
 firefox
 --END OF MINIMAL INSTALL--
 gnome-extra
