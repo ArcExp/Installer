@@ -7,6 +7,7 @@ qt6-wayland
 qt5ct
 qt6ct
 waybar
+ttf-hack-nerd
 pipewire
 pipewire-alsa
 pipewire-pulse
@@ -30,6 +31,7 @@ gvfs
 file-roller
 xdg-user-dirs
 papirus-icon-theme
+catppuccin-gtk-theme-mocha
 wofi
 udiskie
 sddm-sugar-dark
@@ -45,6 +47,5 @@ mpv
 yt-dlp
 less
 wlogout
-ttf-hack-nerd
 firefox
 --END OF MINIMAL INSTALL--
