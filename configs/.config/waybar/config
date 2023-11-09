@@ -4,7 +4,6 @@
     "margin-bottom": 0,
     "modules-left": [
       "hyprland/workspaces",
-      "custom/updates",
       "tray",
       ],
 
@@ -72,19 +71,6 @@
     "memory": {
      "format": " {}%",
      "tooltip": "false"
-    },
-    
-    "custom/powermenu": {
-      "format": "",
-      "tooltip": false,
-      "on-click": "exec wlogout",
-    },
-    
-    "custom/updates": {
-      "format": "<span color=\"#61afef\"></span> {}",
-      "tooltip": false,
-      "interval": 3600,
-      "exec": "exec $HOME/.config/waybar/checkupdate.sh"
     },
     
     "pulseaudio": {

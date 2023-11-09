@@ -9,7 +9,7 @@
 #waybar {
 background: rgba(30, 30, 46, 0.5);
     color: #f4d9e1;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "Hack Nerd Font";
 }
 
@@ -23,14 +23,11 @@ background: rgba(30, 30, 46, 0.5);
   color: #fa5aa4;
 }
 
-#custom-powermenu,
 #cpu,
-#temperature,
 #memory,
 #workspaces,
 #clock,
 #pulseaudio,
-#custom-updates,
 #network {
   padding: 4px 8px;
   background-color:  #1e1e2e;
@@ -42,16 +39,6 @@ background: rgba(30, 30, 46, 0.5);
   margin-left: 4px;
 }
 
-#custom-updates {
-  color: #1788e4;
-}
-
-#custom-powermenu {
-  color: #e06c75;
-  padding-right: 11px;
-  margin-right: 8px;
-}
-
 #pulseaudio {
   color: #0fb9b1;
   padding-right: 14px;
@@ -59,10 +46,6 @@ background: rgba(30, 30, 46, 0.5);
 
 #cpu {
   color: #61afef;
-}
-
-#temperature {
-  color: #98c379;
 }
 
 #memory {
