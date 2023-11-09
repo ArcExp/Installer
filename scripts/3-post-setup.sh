@@ -118,7 +118,7 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
       pacman -Q "$1" &>/dev/null
   }
 
-  # Read the package names from hypr.txt and install missing packages
+  # Read the package names from hypr.txt and install any missing packages
   while IFS= read -r package; do
       if ! is_installed "$package"; then
           echo "Installing $package"
@@ -129,7 +129,6 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 else
   if [[ "${DESKTOP_ENV}" == "server"  ]]; then
     sudo pacman -S --noconfirm --needed sddm
-    systemctl set-default graphical.target
   fi
 fi
 
