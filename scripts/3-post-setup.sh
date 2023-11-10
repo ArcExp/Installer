@@ -72,11 +72,6 @@ fi
 
 if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   systemctl enable sddm.service
-  systemctl --user enable pipewire.socket 
-  systemctl --user enable pipewire-pulse.socket
-  systemctl --user enable pipewire-jack.socket
-  systemctl --user enable pipewire-alsa.socket
-  systemctl --user enable wireplumber.service
   LC_ALL=C xdg-user-dirs-update --force
 
   echo "[Theme]" >> /etc/sddm.conf
