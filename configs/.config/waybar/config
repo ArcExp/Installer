@@ -4,7 +4,6 @@
     "margin-bottom": 0,
     "modules-left": [
       "hyprland/workspaces",
-      "tray",
       ],
 
     "modules-center": [
@@ -12,11 +11,11 @@
       ],
       
     "modules-right": [
+      "tray",
       "cpu",
       "memory",
       "pulseaudio",
       "network",
-      "custom/powermenu",
     ],
     
     "tray": {

@@ -9,7 +9,7 @@
 #waybar {
 background: rgba(30, 30, 46, 0.5);
     color: #f4d9e1;
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Hack Nerd Font";
 }
 
@@ -23,6 +23,7 @@ background: rgba(30, 30, 46, 0.5);
   color: #fa5aa4;
 }
 
+#tray,
 #cpu,
 #memory,
 #workspaces,
