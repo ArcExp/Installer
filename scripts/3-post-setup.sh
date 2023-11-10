@@ -72,6 +72,8 @@ fi
 
 if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   systemctl enable sddm.service
+  systemctl enable pulseaudio
+  systemctl enable pulseaudio-bluetooth
   LC_ALL=C xdg-user-dirs-update --force
 
   echo "[Theme]" >> /etc/sddm.conf
