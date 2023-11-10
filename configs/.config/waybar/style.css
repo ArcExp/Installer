@@ -7,7 +7,6 @@
 }
 
 #waybar {
-background: rgba(30, 30, 46, 0.5);
     color: #f4d9e1;
   font-size: 13px;
   font-family: "Hack Nerd Font";
@@ -20,7 +19,7 @@ background: rgba(30, 30, 46, 0.5);
 /* Fix: active workspace doesn't show up */
 /* #workspaces button.focused { */
 #workspaces button.active {
-  color: #fa5aa4;
+  color: #fca217;
 }
 
 #tray,
@@ -41,7 +40,7 @@ background: rgba(30, 30, 46, 0.5);
 }
 
 #pulseaudio {
-  color: #0fb9b1;
+  color: #d2afff;
   padding-right: 14px;
 }
 
@@ -54,11 +53,11 @@ background: rgba(30, 30, 46, 0.5);
 }
 
 #network {
-  color: #c678dd;
+  color: #fff;
   min-width: 190px;
 }
 
 #clock {
-  color: #fff;
+  color: #fca217;
   margin-left: 8px;
 }
