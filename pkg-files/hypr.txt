@@ -7,11 +7,9 @@ qt5ct
 qt6ct
 waybar
 ttf-hack-nerd
-pipewire
-pipewire-alsa
-pipewire-pulse
-pipewire-jack
-wireplumber
+pulseaudio
+pulseaudio-bluetooth
+jack2
 pavucontrol
 gradience-git
 adw-gtk3
