@@ -1,13 +1,18 @@
-gnome
+eog
+fsarchiver
+gdm
 gedit
+git
+gnome
+neofetch
+NetworkManager
+network-manager-applet
+power-profiles-daemon
+flatpak
+firefox
+wget
+xdg-user-dirs-gtk
 bluez
 bluez-utils
-gnome-bluetooth
-pipewire
-pipewire-jack
-pipewire-alsa
-pipewire-pulse
-wireplumber
-firefox
 --END OF MINIMAL INSTALL--
-gnome-extra
+gnome
