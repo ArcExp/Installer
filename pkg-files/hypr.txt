@@ -22,8 +22,9 @@ cliphist
 kitty
 ttf-jetbrains-mono
 sddm
-nautilus
-libadwaita-without-adwaita-git
+thunar
+thunar-archive-plugin
+thunar-volman
 gvfs
 file-roller
 xdg-user-dirs
