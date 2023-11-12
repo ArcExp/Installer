@@ -3,7 +3,17 @@ fsarchiver
 gdm
 gedit
 git
-gnome
+gnome-disk-utility
+gnome-keyring
+gnome-control-center
+gnome-software
+gnome-shell
+gnome-backgrounds
+gnome-console
+gnome-text-editor
+gnome-shell-extensions
+gvfs
+nautilus
 neofetch
 NetworkManager
 network-manager-applet
@@ -12,7 +22,7 @@ flatpak
 firefox
 wget
 xdg-user-dirs-gtk
+xdg-desktop-portal-gnome
+--END OF MINIMAL INSTALL--
 bluez
 bluez-utils
---END OF MINIMAL INSTALL--
-gnome
