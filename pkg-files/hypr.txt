@@ -44,6 +44,7 @@ ffmpeg
 mpv
 yt-dlp
 less
+ani-cli
 wlogout
 firefox
 --END OF MINIMAL INSTALL--
