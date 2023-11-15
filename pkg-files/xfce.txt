@@ -14,4 +14,4 @@ xfce4-panel
 xfdesktop
 xfwm4-themes
 sddm
-sddm-sugar-dark-theme
+sddm-sugar-dark
