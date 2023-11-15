@@ -27,3 +27,4 @@ xdg-desktop-portal-gnome
 bluez
 bluez-utils
 materia-gtk-theme
+gnome
