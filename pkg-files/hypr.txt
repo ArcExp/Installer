@@ -10,6 +10,7 @@ ttf-hack-nerd
 pipewire
 pipewire-pulse
 pipewire-jack
+pipewire-alsa
 wireplumber
 pavucontrol
 gradience-git
