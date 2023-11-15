@@ -42,10 +42,10 @@ yt-dlp
 less
 ani-cli
 wlogout
+wireplumber
 pipewire
 pipewire-pulse
 pipewire-jack
 pipewire-alsa
-wireplumber
 pavucontrol
 --END OF MINIMAL INSTALL--
