@@ -40,6 +40,7 @@ wlogout
 pulseaudio
 pulseaudio-bluetooth
 pavucontrol
+firefox
 --END OF MINIMAL INSTALL--
 ttf-ms-fonts
 ffmpeg
