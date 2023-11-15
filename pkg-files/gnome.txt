@@ -26,3 +26,4 @@ xdg-desktop-portal-gnome
 --END OF MINIMAL INSTALL--
 bluez
 bluez-utils
+materia-gtk-theme
