@@ -1,6 +1,7 @@
-plasma-desktop
+plasma
 sddm
 dolphin
+konsole
 sddm-sugar-dark
 --END OF MINIMAL INSTALL--
 ark
