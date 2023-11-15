@@ -9,7 +9,3 @@ ffmpeg
 mpv
 yt-dlp
 ani-cli
-pipewire
-pipewire-pulse
-pipewire-jack
-pipewire-alsa
