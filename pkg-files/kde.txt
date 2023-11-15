@@ -1,4 +1,4 @@
-plasma
+plasma-desktop
 sddm
 dolphin
 konsole
