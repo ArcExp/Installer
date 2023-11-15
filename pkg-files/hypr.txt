@@ -7,12 +7,6 @@ qt5ct
 qt6ct
 waybar
 ttf-hack-nerd
-pipewire
-pipewire-pulse
-pipewire-jack
-pipewire-alsa
-wireplumber
-pavucontrol
 gradience-git
 adw-gtk3
 polkit-gnome
