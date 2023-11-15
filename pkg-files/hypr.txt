@@ -36,11 +36,6 @@ breeze
 mako
 ranger
 swaylock-effects
-ffmpeg
-mpv
-yt-dlp
-less
-ani-cli
 wlogout
 wireplumber
 pipewire
@@ -49,3 +44,9 @@ pipewire-jack
 pipewire-alsa
 pavucontrol
 --END OF MINIMAL INSTALL--
+ttf-ms-fonts
+ffmpeg
+mpv
+yt-dlp
+less
+ani-cli
