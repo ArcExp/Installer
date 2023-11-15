@@ -37,11 +37,8 @@ mako
 ranger
 swaylock-effects
 wlogout
-wireplumber
-pipewire
-pipewire-pulse
-pipewire-jack
-pipewire-alsa
+pulseaudio
+pulseaudio-bluetooth
 pavucontrol
 --END OF MINIMAL INSTALL--
 ttf-ms-fonts
