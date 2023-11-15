@@ -7,9 +7,6 @@ qt5ct
 qt6ct
 waybar
 ttf-hack-nerd
-pulseaudio
-pulseaudio-bluetooth
-jack2
 pavucontrol
 gradience-git
 adw-gtk3
