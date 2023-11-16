@@ -154,6 +154,12 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
 if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
 pacman -S flatpak
 flatpak install flathub com.github.tchx84.Flatseal
+sudo systemctl enable --now bluetooth
+curl -sSL https://nightly.link/kaii-lb/overskride/workflows/main/v0.5.4/overskride-nightly-x86_64.zip -o overskride-nightly.zip
+unzip overskride-nightly.zip
+sudo flatpak install org.gnome.Platform//45 # only if needed
+sudo flatpak install -y overskride-nightly.flatpak
+rm overskride-nightly.flatpak
 fi
 
 else
