@@ -66,7 +66,6 @@ if [[ "${DESKTOP_ENV}" == "kde" ]]; then
   echo "Current=sugar-dark" >> /etc/sddm.conf
 
 if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
-  pacman -S flatpak
   flatpak install flathub com.github.tchx84.Flatseal
 fi
 
@@ -76,7 +75,6 @@ if [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
 
 if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
-pacman -S flatpak
 flatpak install flathub com.github.tchx84.Flatseal
 fi
 
@@ -152,7 +150,6 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   done < "$HYPR_FILE"
 
 if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
-sudo pacman -S flatpak
 sudo flatpak install flathub com.github.tchx84.Flatseal
 sudo systemctl enable --now bluetooth
 curl -sSL https://nightly.link/kaii-lb/overskride/workflows/main/v0.5.4/overskride-nightly-x86_64.zip -o overskride-nightly.zip
