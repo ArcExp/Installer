@@ -64,12 +64,22 @@ if [[ "${DESKTOP_ENV}" == "kde" ]]; then
   sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm noisetorch steam-acolyte
   echo "[Theme]" >> /etc/sddm.conf
   echo "Current=sugar-dark" >> /etc/sddm.conf
+
+if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
   pacman -S flatpak
   flatpak install flathub com.github.tchx84.Flatseal
 fi
 
+fi
+
 if [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
+
+if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
+pacman -S flatpak
+flatpak install flathub com.github.tchx84.Flatseal
+fi
+
 fi
 
 if [[ "${DESKTOP_ENV}" == "xfce" ]]; then
@@ -77,8 +87,11 @@ if [[ "${DESKTOP_ENV}" == "xfce" ]]; then
   echo "[Theme]" >> /etc/sddm.conf
   echo "Current=sugar-dark" >> /etc/sddm.conf
 
+if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
   pacman -S flatpak
   flatpak install flathub com.github.tchx84.Flatseal
+fi
+
 fi
 
 if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
@@ -138,8 +151,11 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
       fi
   done < "$HYPR_FILE"
 
+if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
 pacman -S flatpak
 flatpak install flathub com.github.tchx84.Flatseal
+fi
+
 else
   if [[ "${DESKTOP_ENV}" == "server"  ]]; then
     sudo pacman -S --noconfirm --needed sddm
