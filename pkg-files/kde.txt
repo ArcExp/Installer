@@ -38,3 +38,6 @@ spectacle
 systemsettings
 xdg-desktop-portal-kde
 zeroconf-ioslave
+bluez
+bluez-utils
+flatpak
