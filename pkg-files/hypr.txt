@@ -49,3 +49,12 @@ yt-dlp
 less
 ani-cli
 overskride
+obs-studio-git
+lutris
+steam
+obs-vkcapture
+protonup-qt
+adwsteamgtk
+qbittorrent-enhanced
+vlc-wayland-git
+qt5ct
