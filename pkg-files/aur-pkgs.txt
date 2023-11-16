@@ -9,3 +9,4 @@ ffmpeg
 mpv
 yt-dlp
 ani-cli
+overskride
