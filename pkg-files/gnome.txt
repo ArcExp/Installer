@@ -18,7 +18,6 @@ neofetch
 NetworkManager
 network-manager-applet
 power-profiles-daemon
-flatpak
 firefox
 wget
 xdg-user-dirs-gtk
@@ -28,3 +27,4 @@ bluez
 bluez-utils
 materia-gtk-theme
 gnome
+flatpak
