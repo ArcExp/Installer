@@ -98,9 +98,12 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   shopt -s dotglob
   cp -R "$HOME/Installer/configs/.config" "/home/$USERNAME/"
   mkdir -p "/home/$USERNAME/.wallpaper"
+  
   cp "$HOME/Installer/configs/wallpapers/"* "/home/$USERNAME/.wallpaper"
   chmod +x -R "/home/$USERNAME/.config/scripts"
   chmod +x -R "/home/$USERNAME/.config/hypr/scripts/"
+
+  cp -R "$HOME/Installer/configs/.local" "/home/$USERNAME/"
   shopt -u dotglob
 
   # Set ownership of the home directory
