@@ -16,6 +16,11 @@ xfwm4-themes
 sddm
 sddm-sugar-dark
 firefox
+papirus-icon-theme
+catppuccin-gtk-theme-mocha
+pulseaudio
+pulseaudio-bluetooth
+pavucontrol
 --END OF MINIMAL INSTALL--
 ttf-ms-fonts
 ffmpeg
