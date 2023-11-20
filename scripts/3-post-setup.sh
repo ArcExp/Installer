@@ -69,16 +69,80 @@ if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
   flatpak install flathub com.github.tchx84.Flatseal
 fi
 
+  # Path to the hypr.txt file
+  KDE_FILE="$HOME/Installer/pkg-files/kde.txt"
+
+  # Function to check if a package is installed
+  is_installed() {
+      pacman -Q "$1" &>/dev/null
+  }
+
+  # Read the package names from hypr.txt and install any missing packages
+  while IFS= read -r package; do
+      if ! is_installed "$package"; then
+          echo "Installing $package"
+          sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm "$package"
+      fi
+  done < "$KDE_FILE"
+
+systemctl enable pulseaudio
+systemctl enable pulseaudio-bluetooth
 fi
 
 if [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   systemctl enable gdm.service
+
+  if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
+  flatpak install flathub com.github.tchx84.Flatseal
+  fi
+
+    # Path to the hypr.txt file
+  GNOME_FILE="$HOME/Installer/pkg-files/gnome.txt"
+
+  # Function to check if a package is installed
+  is_installed() {
+      pacman -Q "$1" &>/dev/null
+  }
+
+  # Read the package names from hypr.txt and install any missing packages
+  while IFS= read -r package; do
+      if ! is_installed "$package"; then
+          echo "Installing $package"
+          sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm "$package"
+      fi
+  done < "$GNOME_FILE"
+
+  systemctl enable pulseaudio
+  systemctl enable pulseaudio-bluetooth
 fi
 
 if [[ "${DESKTOP_ENV}" == "xfce" ]]; then
   systemctl enable sddm.service
   echo "[Theme]" >> /etc/sddm.conf
   echo "Current=sugar-dark" >> /etc/sddm.conf
+
+  if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
+  flatpak install flathub com.github.tchx84.Flatseal
+fi
+
+ # Path to the hypr.txt file
+  XFCE_FILE="$HOME/Installer/pkg-files/xfce.txt"
+
+  # Function to check if a package is installed
+  is_installed() {
+      pacman -Q "$1" &>/dev/null
+  }
+
+  # Read the package names from hypr.txt and install any missing packages
+  while IFS= read -r package; do
+      if ! is_installed "$package"; then
+          echo "Installing $package"
+          sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm "$package"
+      fi
+  done < "$XFCE_FILE"
+
+systemctl enable pulseaudio
+systemctl enable pulseaudio-bluetooth
 fi
 
 if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
