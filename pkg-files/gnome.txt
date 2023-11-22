@@ -46,6 +46,4 @@ qbittorrent-enhanced
 vlc-wayland-git
 qt5ct
 shotcut
-blender
-krita
 libreoffice
