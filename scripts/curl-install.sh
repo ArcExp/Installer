@@ -7,8 +7,9 @@ if [[ "$(basename "$(pwd)" | tr '[:upper:]' '[:lower:]')" =~ ^scripts$ ]]; then
     exit
 fi
 
-# Installing git
+sudo -S mount -o remount,size=8G /run/archiso/cowspace
 
+# Installing git
 echo "Installing git."
 pacman -Sy --noconfirm --needed git glibc
 
