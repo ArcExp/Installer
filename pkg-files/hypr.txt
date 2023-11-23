@@ -11,7 +11,7 @@ gradience-git
 adw-gtk3
 polkit-gnome
 gedit
-qimgv
+eog
 hyprpaper
 hyprshot
 cliphist
