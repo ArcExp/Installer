@@ -39,7 +39,7 @@ adwsteamgtk
 flatpak
 transmission-gtk
 transmission-cli
-vlc-wayland-git
+vlc-git
 qt5ct
 shotcut
 libreoffice
