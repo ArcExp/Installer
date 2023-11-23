@@ -35,6 +35,7 @@ neofetch
 breeze
 mako
 ranger
+zathura
 swaylock-effects
 wlogout
 pulseaudio
