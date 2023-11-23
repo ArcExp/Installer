@@ -55,7 +55,8 @@ obs-vkcapture
 protonup-qt
 adwsteamgtk
 flatpak
-qbittorrent-enhanced
+transmission-gtk
+transmission-cli
 vlc-wayland-git
 qt5ct
 shotcut
