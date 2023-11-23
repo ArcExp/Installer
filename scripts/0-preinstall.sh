@@ -34,7 +34,6 @@ setfont ter-v22b
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 pacman -S --noconfirm --needed reflector rsync grub
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
-sudo -S mount -o remount,size=8G /run/archiso/cowspace
 echo -ne "
 -------------------------------------------------------------------------
                     Setting up $iso mirrors for faster downloads
