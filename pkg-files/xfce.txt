@@ -34,7 +34,7 @@ lutris
 steam
 discord_arch_electron
 obs-vkcapture
-protonup-qt
+protonup-bin
 adwsteamgtk
 flatpak
 transmission-gtk
