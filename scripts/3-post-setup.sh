@@ -149,8 +149,11 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   systemctl enable sddm.service
   LC_ALL=C xdg-user-dirs-update --force
   
-  systemctl enable pulseaudio
-  systemctl enable pulseaudio-bluetooth
+systemctl --user enable pipewire
+systemctl --user enable pipewire-pulse
+systemctl --user enable pipewire-jack
+systemctl --user enable pipewire-alsa
+systemctl --user enable wireplumber
   
   echo "[Theme]" >> /etc/sddm.conf
   echo "Current=sugar-dark" >> /etc/sddm.conf
