@@ -69,7 +69,7 @@ if [[ ${line} == '--END OF MINIMAL INSTALL--' ]] then
   flatpak install flathub com.github.tchx84.Flatseal
 fi
 
-  # Path to the hypr.txt file
+  # Path to the kde.txt file
   KDE_FILE="$HOME/Installer/pkg-files/kde.txt"
 
   # Function to check if a package is installed
@@ -77,7 +77,7 @@ fi
       pacman -Q "$1" &>/dev/null
   }
 
-  # Read the package names from hypr.txt and install any missing packages
+  # Read the package names from kde.txt and install any missing packages
   while IFS= read -r package; do
       if ! is_installed "$package"; then
           echo "Installing $package"
@@ -96,7 +96,7 @@ if [[ "${DESKTOP_ENV}" == "gnome" ]]; then
   flatpak install flathub com.github.tchx84.Flatseal
   fi
 
-    # Path to the hypr.txt file
+    # Path to the gnome.txt file
   GNOME_FILE="$HOME/Installer/pkg-files/gnome.txt"
 
   # Function to check if a package is installed
@@ -104,7 +104,7 @@ if [[ "${DESKTOP_ENV}" == "gnome" ]]; then
       pacman -Q "$1" &>/dev/null
   }
 
-  # Read the package names from hypr.txt and install any missing packages
+  # Read the package names from gnome.txt and install any missing packages
   while IFS= read -r package; do
       if ! is_installed "$package"; then
           echo "Installing $package"
@@ -125,7 +125,7 @@ if [[ "${DESKTOP_ENV}" == "xfce" ]]; then
   flatpak install flathub com.github.tchx84.Flatseal
 fi
 
- # Path to the hypr.txt file
+ # Path to the xfce.txt file
   XFCE_FILE="$HOME/Installer/pkg-files/xfce.txt"
 
   # Function to check if a package is installed
@@ -133,7 +133,7 @@ fi
       pacman -Q "$1" &>/dev/null
   }
 
-  # Read the package names from hypr.txt and install any missing packages
+  # Read the package names from xfce.txt and install any missing packages
   while IFS= read -r package; do
       if ! is_installed "$package"; then
           echo "Installing $package"
@@ -148,12 +148,6 @@ fi
 if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   systemctl enable sddm.service
   LC_ALL=C xdg-user-dirs-update --force
-  
-systemctl --user enable pipewire
-systemctl --user enable pipewire-pulse
-systemctl --user enable pipewire-jack
-systemctl --user enable pipewire-alsa
-systemctl --user enable wireplumber
   
   echo "[Theme]" >> /etc/sddm.conf
   echo "Current=sugar-dark" >> /etc/sddm.conf
