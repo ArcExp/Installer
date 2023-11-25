@@ -22,3 +22,10 @@ p7zip
 terminus-font
 unrar
 unzip
+pipewire
+pipewire-audio
+pipewire-pulse
+pipewire-jack
+pipewire-alsa
+wireplumber
+pavucontrol
