@@ -38,8 +38,12 @@ ranger
 zathura
 swaylock-effects
 wlogout
-pulseaudio
-pulseaudio-bluetooth
+pipewire
+pipewire-audio
+pipewire-pulse
+pipewire-jack
+pipewire-alsa
+wireplumber
 pavucontrol
 mdcat
 firefox
@@ -62,6 +66,5 @@ flatpak
 transmission-gtk
 transmission-cli
 vlc-git
-qt5ct
 shotcut
 libreoffice
