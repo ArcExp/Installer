@@ -38,13 +38,6 @@ ranger
 zathura
 swaylock-effects
 wlogout
-pipewire
-pipewire-audio
-pipewire-pulse
-pipewire-jack
-pipewire-alsa
-wireplumber
-pavucontrol
 mdcat
 firefox
 --END OF MINIMAL INSTALL--
