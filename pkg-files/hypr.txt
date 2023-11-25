@@ -41,6 +41,7 @@ wlogout
 pulseaudio
 pulseaudio-bluetooth
 pavucontrol
+mdcat
 firefox
 --END OF MINIMAL INSTALL--
 ttf-ms-fonts
