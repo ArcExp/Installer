@@ -5,6 +5,13 @@ linux
 linux-headers
 linux-firmware
 xdg-user-dirs
+pipewire
+pipewire-audio
+pipewire-pulse
+pipewire-jack
+pipewire-alsa
+wireplumber
+pavucontrol
 --END OF MINIMAL INSTALL--
 bluez
 bluez-utils
@@ -22,10 +29,3 @@ p7zip
 terminus-font
 unrar
 unzip
-pipewire
-pipewire-audio
-pipewire-pulse
-pipewire-jack
-pipewire-alsa
-wireplumber
-pavucontrol
