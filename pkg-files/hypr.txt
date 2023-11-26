@@ -60,3 +60,5 @@ vlc-git
 shotcut
 libreoffice
 vscodium-bin
+vkd3d
+gamemode
