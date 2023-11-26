@@ -41,5 +41,6 @@ vlc-git
 qt5ct
 shotcut
 libreoffice
+vscodium-bin
 vkd3d
 gamemode
