@@ -33,7 +33,6 @@ mpv
 yt-dlp
 less
 ani-cli
-overskride
 obs-studio-git
 lutris
 steam
