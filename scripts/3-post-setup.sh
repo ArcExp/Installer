@@ -84,9 +84,6 @@ fi
           sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm "$package"
       fi
   done < "$KDE_FILE"
-
-systemctl enable pulseaudio
-systemctl enable pulseaudio-bluetooth
 fi
 
 if [[ "${DESKTOP_ENV}" == "gnome" ]]; then
@@ -111,9 +108,6 @@ if [[ "${DESKTOP_ENV}" == "gnome" ]]; then
           sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm "$package"
       fi
   done < "$GNOME_FILE"
-
-  systemctl enable pulseaudio
-  systemctl enable pulseaudio-bluetooth
 fi
 
 if [[ "${DESKTOP_ENV}" == "xfce" ]]; then
@@ -140,9 +134,6 @@ fi
           sudo -u "$USERNAME" "$AUR_HELPER" -S --noconfirm "$package"
       fi
   done < "$XFCE_FILE"
-
-systemctl enable pulseaudio
-systemctl enable pulseaudio-bluetooth
 fi
 
 if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
