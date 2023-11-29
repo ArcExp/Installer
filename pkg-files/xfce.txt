@@ -28,7 +28,7 @@ ani-cli
 obs-studio-git
 lutris
 steam
-discord_arch_electron
+discord-electron
 obs-vkcapture
 protonup-qt
 adwsteamgtk
