@@ -1,7 +1,8 @@
-mesa
 base
 base-devel
 linux
+linux-headers
+linux-firmware
 pipewire
 pipewire-audio
 pipewire-pulse
@@ -9,9 +10,8 @@ pipewire-jack
 pipewire-alsa
 wireplumber
 pavucontrol
-linux-headers
-linux-firmware
 xdg-user-dirs
+mesa
 --END OF MINIMAL INSTALL--
 bluez
 bluez-utils
