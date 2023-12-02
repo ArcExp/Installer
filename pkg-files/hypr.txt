@@ -62,6 +62,3 @@ libreoffice
 vscodium-bin
 vkd3d
 gamemode
-obsidian-bin
-obs-bin
-obsidian-export
