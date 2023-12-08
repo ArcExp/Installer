@@ -20,4 +20,4 @@ echo "Executing ArcExp Script"
 
 cd Installer/
 
-exec ./ArcExp.sh
+exec ./arcexp.sh
