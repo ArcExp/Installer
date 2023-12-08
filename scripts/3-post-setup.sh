@@ -220,11 +220,11 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 
-SNAPPER_CONF="$HOME/ArchTitus/configs/etc/snapper/configs/root"
+SNAPPER_CONF="$HOME/Installer/configs/etc/snapper/configs/root"
 mkdir -p /etc/snapper/configs/
 cp -rfv ${SNAPPER_CONF} /etc/snapper/configs/
 
-SNAPPER_CONF_D="$HOME/ArchTitus/configs/etc/conf.d/snapper"
+SNAPPER_CONF_D="$HOME/Installer/configs/etc/conf.d/snapper"
 mkdir -p /etc/conf.d/
 cp -rfv ${SNAPPER_CONF_D} /etc/conf.d/
 
@@ -235,7 +235,7 @@ echo -ne "
                Enabling (and Theming) Plymouth Boot Splash
 -------------------------------------------------------------------------
 "
-PLYMOUTH_THEMES_DIR="$HOME/ArchTitus/configs/usr/share/plymouth/themes"
+PLYMOUTH_THEMES_DIR="$HOME/Installer/configs/usr/share/plymouth/themes"
 PLYMOUTH_THEME="arch-glow" # can grab from config later if we allow selection
 
 mkdir -p /usr/share/plymouth/themes
