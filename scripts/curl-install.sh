@@ -16,8 +16,8 @@ pacman -Sy --noconfirm --needed git glibc
 echo "Cloning the ArchTitus Project"
 git clone https://github.com/ArcExp/Installer
 
-echo "Executing ArchTitus Script"
+echo "Executing ArcExp Script"
 
 cd Installer/
 
-exec ./archtitus.sh
+exec ./ArcExp.sh
