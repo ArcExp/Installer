@@ -3,6 +3,7 @@ sddm
 dolphin
 konsole
 sddm-sugar-dark
+gamemode
 --END OF MINIMAL INSTALL--
 ark
 audiocd-kio
@@ -61,4 +62,3 @@ shotcut
 libreoffice
 vscodium-bin
 vkd3d
-gamemode
