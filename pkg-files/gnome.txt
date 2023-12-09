@@ -22,6 +22,7 @@ firefox
 wget
 xdg-user-dirs-gtk
 xdg-desktop-portal-gnome
+gamemode
 --END OF MINIMAL INSTALL--
 bluez
 bluez-utils
@@ -48,4 +49,3 @@ shotcut
 libreoffice
 vscodium-bin
 vkd3d
-gamemode
