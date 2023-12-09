@@ -18,6 +18,7 @@ sddm-sugar-dark
 firefox
 papirus-icon-theme
 catppuccin-gtk-theme-mocha
+nwg-look-bin
 gamemode
 --END OF MINIMAL INSTALL--
 ttf-ms-fonts
