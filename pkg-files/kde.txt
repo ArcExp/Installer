@@ -62,3 +62,4 @@ shotcut
 libreoffice
 vscodium-bin
 vkd3d
+ppsspp
