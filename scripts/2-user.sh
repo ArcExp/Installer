@@ -50,6 +50,7 @@ if [[ ! $AUR_HELPER == none ]]; then
   done
 fi
 
+$AUR_HELPER -S --noconfirm --needed rustup
 export PATH=$PATH:~/.local/bin
 
 # Theming DE if user chose FULL installation
