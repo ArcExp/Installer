@@ -10,4 +10,4 @@ mpv
 yt-dlp
 ani-cli
 vkbasalt
-dxvk
+dxvk-bin
