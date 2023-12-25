@@ -29,3 +29,4 @@ p7zip
 terminus-font
 unrar
 unzip
+mangohud
