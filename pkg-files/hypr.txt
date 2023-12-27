@@ -26,7 +26,7 @@ file-roller
 xdg-user-dirs
 papirus-icon-theme
 catppuccin-gtk-theme-mocha
-wofi
+rofi
 udiskie
 sddm-sugar-dark
 nwg-look-bin
@@ -64,4 +64,5 @@ vscodium-bin
 vkd3d
 ppsspp
 vkbasalt
+rofi-games
 dxvk-bin
