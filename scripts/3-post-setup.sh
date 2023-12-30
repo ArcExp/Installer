@@ -167,12 +167,6 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   # Set ownership of the home directory
   chown -R "$USERNAME:$USERNAME" "/home/$USERNAME"
 
-    # Install Fish shell and set it as the default shell
-  if ! which fish &>/dev/null; then
-    pacman -S --noconfirm fish
-    chsh -s /usr/bin/fish "$USERNAME"
-  fi
-
   echo -ne "Verify Packages Are Installed\n"
 
   # Path to the hypr.txt file
