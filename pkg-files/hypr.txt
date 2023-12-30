@@ -7,7 +7,6 @@ qt5ct
 qt6ct
 waybar
 ttf-hack-nerd
-gradience-git
 adw-gtk3
 polkit-gnome
 gedit
