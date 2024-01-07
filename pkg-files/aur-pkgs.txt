@@ -4,7 +4,7 @@ nerd-fonts-fira-code
 plymouth-git
 ttf-meslo
 vde2
-snapper-gui-git
+btrfs-assistant
 ffmpeg
 mpv
 yt-dlp
