@@ -28,6 +28,7 @@ bluez
 bluez-utils
 materia-gtk-theme
 gnome
+gnome-builder
 ttf-ms-fonts
 ffmpeg
 mpv
