@@ -64,5 +64,3 @@ ppsspp
 vkbasalt
 rofi-games
 dxvk-bin
-gnome-builder
-vala
