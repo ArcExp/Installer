@@ -50,6 +50,5 @@ shotcut
 libreoffice
 vscodium-bin
 vkd3d
-ppsspp
 vkbasalt
 dxvk-bin
