@@ -60,7 +60,6 @@ shotcut
 libreoffice
 vscodium-bin
 vkd3d
-ppsspp
 vkbasalt
 rofi-games
 dxvk-bin
