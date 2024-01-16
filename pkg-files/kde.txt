@@ -64,4 +64,3 @@ vscodium-bin
 vkd3d
 vkbasalt
 dxvk-bin
-ppsspp
