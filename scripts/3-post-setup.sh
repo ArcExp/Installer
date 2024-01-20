@@ -157,7 +157,7 @@ if [[ "${DESKTOP_ENV}" == "hypr" ]]; then
   cp -R "$HOME/Installer/configs/.config" "/home/$USERNAME/"
   mkdir -p "/home/$USERNAME/.wallpaper"
   
-  cp "$HOME/Installer/configs/wallpapers/"* "/home/$USERNAME/.wallpaper"
+  cp "$HOME/Installer/configs/wallpaper/"* "/home/$USERNAME/.wallpaper"
   chmod +x -R "/home/$USERNAME/.config/scripts"
   chmod +x -R "/home/$USERNAME/.config/hypr/scripts/"
 
