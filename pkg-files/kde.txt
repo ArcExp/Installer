@@ -3,6 +3,7 @@ sddm
 dolphin
 konsole
 sddm-sugar-dark
+firefox
 gamemode
 --END OF MINIMAL INSTALL--
 ark
