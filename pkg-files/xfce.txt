@@ -27,11 +27,9 @@ mpv
 yt-dlp
 less
 ani-cli
-obs-studio-git
 lutris
 steam
 discord-electron
-obs-vkcapture
 protonup-qt
 adwsteamgtk
 flatpak
