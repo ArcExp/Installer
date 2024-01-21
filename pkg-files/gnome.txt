@@ -35,7 +35,6 @@ mpv
 yt-dlp
 less
 ani-cli
-obs-studio-git
 lutris
 steam
 discord-electron
