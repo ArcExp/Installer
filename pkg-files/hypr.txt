@@ -39,6 +39,8 @@ wlogout
 mdcat
 firefox
 gamemode
+xdg-desktop-portal-gtk
+xdg-desktop-portal-xapp
 --END OF MINIMAL INSTALL--
 ttf-ms-fonts
 ffmpeg
