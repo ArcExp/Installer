@@ -41,6 +41,7 @@ firefox
 gamemode
 xdg-desktop-portal-gtk
 xdg-desktop-portal-xapp
+xdg-desktop-portal-wlr
 --END OF MINIMAL INSTALL--
 ttf-ms-fonts
 ffmpeg
