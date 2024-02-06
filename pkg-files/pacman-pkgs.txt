@@ -30,4 +30,3 @@ terminus-font
 unrar
 unzip
 mangohud
-go
