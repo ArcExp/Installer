@@ -56,7 +56,6 @@ protonup-qt
 adwsteamgtk
 flatpak
 transmission-gtk
-vlc-git
 shotcut
 libreoffice
 vscodium-bin
