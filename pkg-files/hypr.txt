@@ -63,3 +63,4 @@ vkd3d
 vkbasalt
 rofi-games
 dxvk-bin
+gnome-disks
