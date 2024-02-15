@@ -42,7 +42,6 @@ protonup-qt
 adwsteamgtk
 flatpak
 transmission-gtk
-vlc-git
 qt5ct
 shotcut
 libreoffice
