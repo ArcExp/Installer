@@ -55,7 +55,6 @@ protonup-qt
 adwsteamgtk
 flatpak
 transmission-gtk
-gnome-disks
 qt5ct
 shotcut
 libreoffice
