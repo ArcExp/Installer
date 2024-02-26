@@ -42,6 +42,7 @@ gamemode
 xdg-desktop-portal-gtk
 xdg-desktop-portal-xapp
 xdg-desktop-portal-wlr
+brightnessctl
 --END OF MINIMAL INSTALL--
 ttf-ms-fonts
 ffmpeg
