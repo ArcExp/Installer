@@ -31,3 +31,4 @@ unrar
 unzip
 mangohud
 gnome-disks
+plymouth
