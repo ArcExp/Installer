@@ -53,7 +53,7 @@ ani-cli
 lutris
 steam
 discord-electron
-protonup-qt
+protonup-rs-bin
 adwsteamgtk
 flatpak
 transmission-gtk
