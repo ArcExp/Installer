@@ -1,7 +1,6 @@
 --END OF MINIMAL INSTALL--
 bridge-utils
 nerd-fonts-fira-code
-plymouth-git
 ttf-meslo
 vde2
 btrfs-assistant
