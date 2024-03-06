@@ -1,9 +1,4 @@
 {
-    "label" : "lock",
-    "action" : "~/.config/hypr/scripts/lock.sh",
-    "text" : "Lock",
-}
-{
     "label" : "reboot",
     "action" : "systemctl reboot",
     "text" : "Reboot",
