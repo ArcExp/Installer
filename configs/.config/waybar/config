@@ -56,7 +56,7 @@
     },
     
     "network": {
-      "interface": "eno1",
+      "interface": "enp37s0",
       "tooltip-format-ethernet": "{ifname} ",
       "interval": 2,
       "format": " {bandwidthDownBits}  {bandwidthUpBits}",
