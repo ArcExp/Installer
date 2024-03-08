@@ -43,6 +43,7 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-xapp
 xdg-desktop-portal-wlr
 brightnessctl
+hyprlock
 --END OF MINIMAL INSTALL--
 ttf-ms-fonts
 ffmpeg
