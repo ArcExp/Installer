@@ -32,3 +32,4 @@ unzip
 mangohud
 gnome-disks
 plymouth
+obs-studio
